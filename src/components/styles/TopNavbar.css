@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100%;
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(26, 26, 29, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar_logo__container {
+  height: 100%;
+  width: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar_logo {
+  height: 50%;
+  width: auto;
+  margin: auto 0;
+  aspect-ratio: 1/1;
+}
+
+.navbar_hamburger__container {
+  height: 100%;
+  width: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1.5vw;
+  padding: 0 0.5vw;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+li.active {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+  transition: border-bottom 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navicon {
+  background-color: #cfcfcf;
+  width: 45%;
+  height: 4px;
+  border-radius: 25px;
+  display: block;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.navicon:before,
+.navicon:after {
+  margin: 0 10%;
+  background-color: #cfcfcf;
+  border-radius: 25px;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 80%;
+}
+
+.navicon:before {
+  top: 10px;
+}
+
+.navicon:after {
+  top: -10px;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (max-width: 48em) {
+  
+}
