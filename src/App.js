@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import TopNavbar from "./components/TopNavbar";
+import LeftNavbar from "./components/LeftNavbar";
+import RightNavbar from "./components/RightNavbar";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -23,6 +25,8 @@ function App() {
   return (
     <>
         <TopNavbar current={current} />
+        <LeftNavbar/>
+        <RightNavbar/>
         <section className="section" id="home">
           <h1>Home</h1>
         </section>

@@ -23,7 +23,7 @@
 }
 
 .navbar_logo {
-  height: 50%;
+  height: 60%;
   width: auto;
   margin: auto 0;
   aspect-ratio: 1/1;
@@ -31,7 +31,7 @@
 
 .navbar_hamburger__container {
   height: 100%;
-  width: 9vh;
+  width: calc(9vh - 5px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +57,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  transition: all 0.2s ease-out;
 }
 
 .menu li {
@@ -66,6 +67,8 @@
   margin: 0 1.5vw;
   padding: 0 0.5vw;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
+  background: transparent;
+  transition: all 0.2s ease-out;
 }
 
 .menu li.active {
@@ -155,17 +158,24 @@ a:hover {
     max-height: 240px;
   }
   .menu {
-    opacity: 0;
+    /* opacity: 0; */
     flex-direction: column;
     pointer-events: none;
-    transform: translate(0, -50%);
     position: absolute;
     width: 100%;
     height: auto;
     top: calc(100% + 1px);
-    backdrop-filter : blur(25px);
-    background-color: rgba(26, 26, 29, 0.8);
+    backdrop-filter: blur(25px);
+    background-color: rgba(26, 26, 29);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+  }
+
+  .menu li {
+    transform: translate(100%, 0);
+  }
+  .menu li.active {
+    border-bottom: none;
   }
   .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
@@ -185,19 +195,16 @@ a:hover {
   }
 
   .open {
-    position: absolute;
-    transform: translate(0, 0);
-    z-index: 1000;
     opacity: 1;
     pointer-events: all;
-    padding: 2.5vw;
   }
 
   .open li {
+    transform: translate(0, 0);
     padding: 2.5vw 0;
   }
 
   .open li a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
