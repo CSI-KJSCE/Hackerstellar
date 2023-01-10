@@ -2,6 +2,10 @@ import React from "react";
 import "./styles/TopNavbar.css";
 
 const TopNavbar = (props) => {
+  function toggleNav() {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("open");
+  }
   return (
     <nav className="navbar">
       <div className="navbar_logo__container">
@@ -11,7 +15,7 @@ const TopNavbar = (props) => {
           className="navbar_logo"
         />
       </div>
-      <ul className="menu">
+      <div className="menu">
         <li className={`home ${props.current === "home" ? "active" : null}`}>
           <a href="#home">Home</a>
         </li>
@@ -45,9 +49,10 @@ const TopNavbar = (props) => {
         <li className={`faq ${props.current === "faq" ? "active" : null}`}>
           <a href="#faq">FAQs</a>
         </li>
-      </ul>
+      </div>
+      <h1 className="navbar_title">Hackerstellar</h1>
       <div className="navbar_hamburger__container">
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <input className="menu-btn" type="checkbox" id="menu-btn" onClick={()=> toggleNav()}/>
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>

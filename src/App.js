@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
-import { Theme } from "./theme/theme";
 import TopNavbar from "./components/TopNavbar";
 
 function App() {
-  let current = "home";
+  const [current, setCurrent] = useState("home");
 
   const handleScroll = () => {
     const sections = document.querySelectorAll(".section");
@@ -13,20 +12,16 @@ function App() {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
       if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
+        setCurrent(section.getAttribute("id"));
       }
     });
-
-    return current;
   };
-
-  window.addEventListener("scroll", handleScroll);
-
-  console.log(handleScroll());
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <Theme>
         <TopNavbar current={current} />
         <section className="section" id="home">
           <h1>Home</h1>
@@ -49,7 +44,6 @@ function App() {
         <section className="section" id="faq">
           <h1>FAQs</h1>
         </section>
-      </Theme>
     </>
   );
 }
