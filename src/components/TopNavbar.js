@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/TopNavbar.css";
 
 const TopNavbar = (props) => {
@@ -6,6 +6,29 @@ const TopNavbar = (props) => {
     const menu = document.querySelector(".menu");
     menu.classList.toggle("open");
   }
+
+  function animationHandler() {
+    document.querySelector("body").style.animation =
+      "shake 1s cubic-bezier(.36,.07,.19,.97) infinite";
+    setTimeout(() => {
+      document.querySelector("body").style.animation = "none";
+    }, 1000);
+  }
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
+  const [easterEgg, setEasterEgg] = useState(true);
+  if (width <= 768 && easterEgg) {
+    setEasterEgg(false);
+  }
+
   return (
     <nav className="navbar">
       <div className="navbar_logo__container">
@@ -51,12 +74,26 @@ const TopNavbar = (props) => {
         </li>
       </div>
       <h1 className="navbar_title">Hackerstellar</h1>
-      <div className="navbar_hamburger__container">
-        <input className="menu-btn" type="checkbox" id="menu-btn" onClick={()=> toggleNav()}/>
-        <label className="menu-icon" htmlFor="menu-btn">
-          <span className="navicon"></span>
-        </label>
-      </div>
+      {easterEgg ? (
+        <div className="navbar_hamburger__container">
+          <i
+            className="fa-solid fa-triangle-exclamation nav_danger"
+            onClick={animationHandler}
+          ></i>
+        </div>
+      ) : (
+        <div className="navbar_hamburger__container">
+          <input
+            className="menu-btn"
+            type="checkbox"
+            id="menu-btn"
+            onClick={() => toggleNav()}
+          />
+          <label className="menu-icon" htmlFor="menu-btn">
+            <span className="navicon"></span>
+          </label>
+        </div>
+      )}
     </nav>
   );
 };

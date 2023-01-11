@@ -25,7 +25,7 @@ function App() {
   return (
     <>
         <TopNavbar current={current} />
-        <LeftNavbar/>
+        <LeftNavbar current={current}/>
         <RightNavbar/>
         <section className="section" id="home">
           <h1>Home</h1>

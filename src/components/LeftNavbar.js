@@ -1,11 +1,26 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "../components/styles/LeftNavbar.css";
 
-const LeftNavbar = () => {
+const LeftNavbar = (props) => {
+  const [text, setText] = useState("Hackerstellar"); 
+
+  useEffect(() => {
+    switch (props.current) {
+      case "home":
+        setText("#DimensionDrift");
+        break;
+      case "about":
+        setText("#GearUp");
+        break;
+      default:
+        setText("Hackerstellar");
+    }
+  }, [props]);
+
   return (
     <>
       <div className="left-navbar">
-        <h1 className="left-navbar_title">#DimensionDrift</h1>
+        <h1 className="left-navbar_title">{text}</h1>
         <div className="left-navbar_menu">
           <li>
             <a href="mailto:csi-kjsce@somaiya.edu">
