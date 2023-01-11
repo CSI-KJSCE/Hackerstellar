@@ -8,26 +8,30 @@ const TopNavbar = (props) => {
   }
 
   function animationHandler() {
-    document.querySelector("body").style.animation =
-      "shake 1s cubic-bezier(.36,.07,.19,.97) infinite";
+    document.querySelector("body").classList.add("danger");
     setTimeout(() => {
-      document.querySelector("body").style.animation = "none";
+      document.querySelector("body").classList.remove("danger");
     }, 1000);
   }
 
+  const [easterEgg, setEasterEgg] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
   const updateDimensions = () => {
     setWidth(window.innerWidth);
+    let width = window.innerWidth;
+    if (width <= 768 && easterEgg) {
+      setEasterEgg(false);
+    } else {
+      setEasterEgg(true);
+    }
   };
+  if (width <= 768 && easterEgg) {
+    setEasterEgg(false);
+  }
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
-
-  const [easterEgg, setEasterEgg] = useState(true);
-  if (width <= 768 && easterEgg) {
-    setEasterEgg(false);
-  }
 
   return (
     <nav className="navbar">

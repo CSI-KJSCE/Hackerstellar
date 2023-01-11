@@ -5,8 +5,8 @@
   width: 100%;
   backdrop-filter: blur(15px) saturate(200%);
   -webkit-backdrop-filter: blur(25px) saturate(200%);
-  background-color: rgba(26, 26, 29, 0.75);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(var(--foreground-color-rgb), 0.75);
+  border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
   padding: 0px;
   position: sticky;
   top: 0;
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(var(--border-color-rgb), 0.2);
 }
 
 .navbar_logo {
@@ -35,13 +35,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(var(--border-color-rgb), 0.2);
 }
 
 .navbar_title {
   text-transform: uppercase;
   font-weight: 700;
-  color: #cfcfcf;
+  color: var(--font-color-primary);
   font-style: italic;
   margin: auto 0;
   text-align: center;
@@ -66,28 +66,28 @@
   height: 100%;
   margin: 0 1.5vw;
   padding: 0 0.5vw;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(var(--border-color-rgb), 0);
   background: transparent;
   transition: all 0.2s ease-out;
 }
 
 .menu li.active {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 3px solid rgba(var(--border-color-rgb), 0.75);
 }
 
 .menu li.active a {
-  color: #fff;
+  color: var(--font-color-secondary);
 }
 
 a {
   text-decoration: none;
-  color: #cfcfcf;
+  color: var(--font-color-primary);
   font-size: 1.1rem;
   font-weight: 500;
 }
 
 a:hover {
-  color: #fff;
+  color: var(--font-color-secondary);
 }
 
 .menu-icon {
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--hover-color-primary);
 }
 
 .menu-btn {
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .navicon {
-  background-color: #cfcfcf;
+  background-color: var(--foreground-color-secondary);
   width: 45%;
   height: 4px;
   border-radius: 25px;
@@ -123,7 +123,7 @@ a:hover {
 .navicon:before,
 .navicon:after {
   margin: 0 10%;
-  background-color: #cfcfcf;
+  background-color: var(--foreground-color-secondary);
   border-radius: 25px;
   content: "";
   display: block;
@@ -166,7 +166,7 @@ a:hover {
     top: calc(100% + 1px);
     backdrop-filter: blur(25px);
     background-color: rgba(26, 26, 29);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
     opacity: 0;
   }
 
@@ -210,7 +210,7 @@ a:hover {
 
 .nav_danger {
   font-size: 1.75rem;
-  color: #cfcfcf;
+  color: var(--font-color-primary);
 }
 
 @keyframes shake {

@@ -7,8 +7,8 @@
   width: calc(9vh - 5px);
   backdrop-filter: blur(15px) saturate(200%);
   -webkit-backdrop-filter: blur(25px) saturate(200%);
-  background-color: rgba(26, 26, 29, 0.75);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(var(--foreground-color-rgb), 0.75);
+  border-left: 1px solid rgba(var(--border-color-rgb), 0.2);
   padding: calc(25px + 3vh) 0;
   position: fixed;
   z-index: 1000;
@@ -19,7 +19,7 @@
 .right-navbar_title {
   text-transform: uppercase;
   font-weight: 500;
-  color: #cfcfcf;
+  color: var(--font-color-primary);
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 2.5px;
@@ -38,14 +38,14 @@
   justify-content: center;
 }
 .counter div {
-  border: 3px solid #cfcfcf;
+  border: 3px solid rgba(var(--border-color-rgb), 0.4);
   border-radius: 50%;
   width: 6vh;
   height: 6vh;
   max-width: 6vh;
   overflow: hidden;
   display: flex;
-  color: #cfcfcf;
+  color: var(--font-color-primary);
   align-items: center;
   justify-content: center;
 }
@@ -53,7 +53,7 @@
   font-size: 1.2rem;
 }
 .counter h4 {
-  color: #cfcfcf;
+  color: var(--font-color-primary);
   font-size: 0.75rem;
   margin-top: 0.4rem;
 }
