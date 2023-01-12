@@ -27,11 +27,6 @@ body {
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--background-color);
-  /* background: url("../public/space.gif") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
   height: 100vh;
   transition: color 1s ease;
   overflow-x: hidden;
@@ -50,6 +45,7 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  overflow: hidden;
 }
 
 #home {
@@ -59,7 +55,6 @@ section {
 .button_outer{
   width: 300px;
   height: 100%;
-  /* background: url(./data/assets/trapezium2.svg); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

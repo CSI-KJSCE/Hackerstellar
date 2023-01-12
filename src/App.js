@@ -3,7 +3,7 @@ import "./index.css";
 import TopNavbar from "./components/TopNavbar";
 import LeftNavbar from "./components/LeftNavbar";
 import RightNavbar from "./components/RightNavbar";
-import Spline from "@splinetool/react-spline";
+import Home from "./pages/Home";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -28,13 +28,8 @@ function App() {
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
-      <section className="section" id="home" style={{position: 'relative'}}>
-          <img src={require('./data/assets/standingastro.png')} alt='' style={{
-            position: 'absolute',
-            bottom: '-5vh',
-            width: '32.5vw',
-          }}></img>
-        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode" />
+      <section className="section" id="home">
+        <Home />
       </section>
       <section className="section" id="about">
         <h1>About</h1>

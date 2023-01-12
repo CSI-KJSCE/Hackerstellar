@@ -64,7 +64,7 @@
     justify-content: center;
     gap: 3vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .right-navbar {
     height: 8vh;
     width: 100%;
