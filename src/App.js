@@ -3,6 +3,7 @@ import "./index.css";
 import TopNavbar from "./components/TopNavbar";
 import LeftNavbar from "./components/LeftNavbar";
 import RightNavbar from "./components/RightNavbar";
+import Spline from "@splinetool/react-spline";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -24,30 +25,30 @@ function App() {
 
   return (
     <>
-        <TopNavbar current={current} />
-        <LeftNavbar current={current}/>
-        <RightNavbar/>
-        <section className="section" id="home">
-          <h1>Home</h1>
-        </section>
-        <section className="section" id="about">
-          <h1>About</h1>
-        </section>
-        <section className="section" id="domains">
-          <h1>Domains</h1>
-        </section>
-        <section className="section" id="prizes">
-          <h1>Prizes</h1>
-        </section>
-        <section className="section" id="timeline">
-          <h1>Timeline</h1>
-        </section>
-        <section className="section" id="sponsors">
-          <h1>Sponsors</h1>
-        </section>
-        <section className="section" id="faq">
-          <h1>FAQs</h1>
-        </section>
+      <TopNavbar current={current} />
+      <LeftNavbar current={current} />
+      <RightNavbar />
+      <section className="section" id="home" style={{position: 'relative'}}>
+        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"/>
+      </section>
+      <section className="section" id="about">
+        <h1>About</h1>
+      </section>
+      <section className="section" id="domains">
+        <h1>Domains</h1>
+      </section>
+      <section className="section" id="prizes">
+        <h1>Prizes</h1>
+      </section>
+      <section className="section" id="timeline">
+        <h1>Timeline</h1>
+      </section>
+      <section className="section" id="sponsors">
+        <h1>Sponsors</h1>
+      </section>
+      <section className="section" id="faq">
+        <h1>FAQs</h1>
+      </section>
     </>
   );
 }

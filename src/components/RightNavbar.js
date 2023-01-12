@@ -37,10 +37,10 @@ const RightNavbar = () => {
           <span>N</span>
         </h1>
         <div className="right-navbar_counter">
-          <Counter val={days} text="Days" />
-          <Counter val={hours} text="Hours" />
-          <Counter val={minutes} text="Minutes" />
-          <Counter val={seconds} text="Seconds" />
+          <Counter val={days} text='D' />
+          <Counter val={hours} text='H' />
+          <Counter val={minutes} text='M' />
+          <Counter val={seconds} text='S' />
         </div>
       </div>
     </>
