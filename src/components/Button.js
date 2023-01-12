@@ -6,7 +6,7 @@ export default function Button(props) {
   return (
     <div className="button_outer">
       <div className="button_text">
-        <img src="/trapezium.png" />
+        {/* <img src="/trapezium.png" /> */}
         <h4>
           {icon ? <img className="icon" src={icon} /> : null}
           {text}
