@@ -4,6 +4,7 @@ import TopNavbar from "./components/TopNavbar";
 import LeftNavbar from "./components/LeftNavbar";
 import RightNavbar from "./components/RightNavbar";
 import Spline from "@splinetool/react-spline";
+import Button from "./components/Button";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -29,7 +30,8 @@ function App() {
       <LeftNavbar current={current} />
       <RightNavbar />
       <section className="section" id="home" style={{position: 'relative'}}>
-        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"/>
+        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode" style={{position: 'absolute'}}/>
+        <Button text={"gg"} icon="/hamburger.svg" style={{position: "absolute"}} />
       </section>
       <section className="section" id="about">
         <h1>About</h1>
