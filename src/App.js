@@ -29,7 +29,12 @@ function App() {
       <LeftNavbar current={current} />
       <RightNavbar />
       <section className="section" id="home" style={{position: 'relative'}}>
-        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"/>
+          <img src={require('./data/assets/standingastro.png')} alt='' style={{
+            position: 'absolute',
+            bottom: '-5vh',
+            width: '32.5vw',
+          }}></img>
+        <Spline scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode" />
       </section>
       <section className="section" id="about">
         <h1>About</h1>
