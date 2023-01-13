@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Home.css";
+import Button from "../components/Button";
 import Spline from "@splinetool/react-spline";
 
 const Home = () => {
@@ -24,6 +25,10 @@ const Home = () => {
           scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"
           className="home_mars"
         />
+        <div className="button_position">
+          <Button text="Devfolio"/>
+          <Button text="Discord"/>
+        </div>
       </div>
     </>
   );
