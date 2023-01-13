@@ -3,7 +3,9 @@ import "./index.css";
 import TopNavbar from "./components/TopNavbar";
 import LeftNavbar from "./components/LeftNavbar";
 import RightNavbar from "./components/RightNavbar";
+import Background from "./components/Background";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -28,15 +30,12 @@ function App() {
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
-      <div className="background-container">
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-      </div>
+      <Background />
       <section className="section" id="home">
         <Home />
       </section>
       <section className="section" id="about">
-        <h1>About</h1>
+        <About />
       </section>
       <section className="section" id="domains">
         <h1>Domains</h1>
