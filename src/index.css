@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 :root {
   --font-color-primary: #cfcfcf;
@@ -12,7 +12,6 @@
   --blur-strength: 15px;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -25,16 +24,11 @@ body {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: var(--background-color);
   height: 100vh;
   transition: color 1s ease;
   overflow-x: hidden;
-}
-
-
-.danger {
-  --font-color-primary: #fd5959;
 }
 
 section {
@@ -47,51 +41,7 @@ section {
   scroll-snap-align: start;
   overflow: hidden;
 }
-.button_outer{
-  width: 300px;
-  height: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.button_text {
-  clip-path: polygon(0 0, 100% 0, 87% 100%, 13% 100%);
-  width: 100%;
-  transform: translate3d(0, -0.5rem, 0);
-  height: 50px;
-  transition: transform 0.1s ease;
-  position: relative;
-  cursor: pointer;
-  background-color: rgba(255, 254, 254, 0.15);
-  backdrop-filter: blur(15px) saturate(200%);
-  border: 2px solid rgba(var(--border-color-rgb), 0.8);
-}
-.button_text .icon{
-  height: 100%;
-  width: auto;
-}
-.button_text h4{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.button_text:hover {
-  transform: translate3d(0, -0.25rem, 0);
-  transition: transform 0.2s ease;
-}
-.button_text:active {
-  transform: translate3d(0, 0px, 0);
-  transition: transform 0.2s ease;
-}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -106,80 +56,3 @@ section {
 ::-webkit-scrollbar-thumb {
   background: #cfcfcf30;
 }
-
-/* ---------------stars----------------- */
-
-
-@keyframes move-background {
-  from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-@-webkit-keyframes move-background {
-  from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-@-moz-keyframes move-background {    
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-    @-webkit-keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-.background-container{
-    position: fixed;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
-}
-
-.stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-      z-index: 0;
-}
-
-.twinkling{
-    width:10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-    
-}
-

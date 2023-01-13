@@ -60,7 +60,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  transition: all 0.2s ease-out;
+  transition: all 0.25s;
 }
 
 .menu li {
@@ -71,7 +71,7 @@
   padding: 0 0.5vw;
   border-bottom: 2px solid rgba(var(--border-color-rgb), 0);
   background: transparent;
-  transition: all 0.2s ease-out;
+  transition: all 0.25s;
   width: fit-content;
 }
 
@@ -121,7 +121,7 @@ a:hover {
   border-radius: 25px;
   display: block;
   position: relative;
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.25s;
 }
 
 .navicon:before,
@@ -133,7 +133,7 @@ a:hover {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
+  transition: all 0.25s;
   width: 80%;
 }
 
@@ -155,13 +155,17 @@ a:hover {
     height: 8vh;
   }
   .navbar_title {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
+
   .navbar_logo__container {
-    width: 7.5vh;
+    width: 8vh;
   }
   .navbar_hamburger__container {
-    width: 7.5vh;
+    width: 8vh;
   }
   .menu-btn:checked ~ .menu {
     max-height: 240px;

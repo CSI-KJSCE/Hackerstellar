@@ -71,7 +71,7 @@ const TopNavbar = (props) => {
           <a href="#faq">FAQs</a>
         </li>
       </ul>
-      <h1 className="navbar_title">Hackerstellar</h1>
+      <h1 className="navbar_title"> Hackerstellar </h1>
       {easterEgg ? (
         <div className="navbar_hamburger__container">
           <i
