@@ -10,7 +10,22 @@ const LeftNavbar = (props) => {
         setText("#DimensionDrift");
         break;
       case "about":
-        setText("#GearUp");
+        setText("#GalacticGrind");
+        break;
+      case "domains":
+        setText("#CodeCosmos");
+        break;
+      case "prizes":
+        setText("#HackerHorizons");
+        break;
+      case "timeline":
+        setText("#Hacktronauts");
+        break;
+      case "sponsors":
+        setText("#StellarHackers");
+        break;
+      case "faq":
+        setText("#NebulaNavigators");
         break;
       default:
         setText("Hackerstellar");
