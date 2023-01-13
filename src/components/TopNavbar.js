@@ -5,13 +5,7 @@ const TopNavbar = (props) => {
   function toggleNav() {
     const menu = document.querySelector(".menu");
     menu.classList.toggle("open");
-  }
-
-  function animationHandler() {
-    document.querySelector("body").classList.add("danger");
-    setTimeout(() => {
-      document.querySelector("body").classList.remove("danger");
-    }, 1000);
+    menu.classList.toggle("glass");
   }
 
   const [easterEgg, setEasterEgg] = useState(true);
@@ -34,7 +28,7 @@ const TopNavbar = (props) => {
   });
 
   return (
-    <nav className="navbar">
+    <nav className="navbar glass">
       <div className="navbar_logo__container">
         <img
           src={require("../data/assets/logo.svg").default}
@@ -42,7 +36,7 @@ const TopNavbar = (props) => {
           className="navbar_logo"
         />
       </div>
-      <div className="menu">
+      <ul className="menu">
         <li className={`home ${props.current === "home" ? "active" : null}`}>
           <a href="#home">Home</a>
         </li>
@@ -76,13 +70,12 @@ const TopNavbar = (props) => {
         <li className={`faq ${props.current === "faq" ? "active" : null}`}>
           <a href="#faq">FAQs</a>
         </li>
-      </div>
+      </ul>
       <h1 className="navbar_title">Hackerstellar</h1>
       {easterEgg ? (
         <div className="navbar_hamburger__container">
           <i
             className="fa-solid fa-triangle-exclamation nav_danger"
-            onClick={animationHandler}
           ></i>
         </div>
       ) : (

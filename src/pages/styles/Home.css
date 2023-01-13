@@ -8,7 +8,8 @@
 .home_mars {
   position: absolute;
   z-index: 5;
-  transform: translateY(5vh);
+  width: 125%;
+  transform: scaleX(1.25) translateY(5vh) translateX(-1vw);
 }
 
 .home_astro {
@@ -131,7 +132,8 @@
 
 @media (max-width: 750px) {
   .home_mars {
-    transform: translateY(10vh);
+    width: 100%;
+    transform: scaleX(1) scaleY(1.5) translateY(0vh) translateX(0);
   }
 
   .home_astro {
