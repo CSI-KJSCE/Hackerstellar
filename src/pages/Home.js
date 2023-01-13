@@ -2,15 +2,13 @@ import React from "react";
 import "./styles/Home.css";
 import Button from "../components/Button";
 import Spline from "@splinetool/react-spline";
+import Background from "../components/Background";
 
 const Home = () => {
   return (
     <>
       <div className="home">
-        <div className="background-container">
-          <div className="stars"></div>
-          <div className="twinkling"></div>
-        </div>
+        <Background />
         <img
           src="http://logo-hack.surge.sh/hackerstellar.png"
           alt=""
