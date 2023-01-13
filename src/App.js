@@ -28,6 +28,10 @@ function App() {
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
+      <div className="background-container">
+        <div className="stars"></div>
+        <div className="twinkling"></div>
+      </div>
       <section className="section" id="home">
         <Home />
       </section>
