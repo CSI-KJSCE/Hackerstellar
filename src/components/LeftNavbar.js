@@ -1,35 +1,13 @@
 import React, {useEffect, useState} from "react";
 import "../components/styles/LeftNavbar.css";
+import data from "../data/components/LeftNavbar.json";
 
 const LeftNavbar = (props) => {
   const [text, setText] = useState("Hackerstellar"); 
+  console.log(data)
 
   useEffect(() => {
-    switch (props.current) {
-      case "home":
-        setText("#DimensionDrift");
-        break;
-      case "about":
-        setText("#GalacticGrind");
-        break;
-      case "domains":
-        setText("#CodeCosmos");
-        break;
-      case "prizes":
-        setText("#HackerHorizons");
-        break;
-      case "timeline":
-        setText("#Hacktronauts");
-        break;
-      case "sponsors":
-        setText("#StellarHackers");
-        break;
-      case "faq":
-        setText("#NebulaNavigators");
-        break;
-      default:
-        setText("Hackerstellar");
-    }
+    setText(data[props.current]);
   }, [props]);
 
   return (
