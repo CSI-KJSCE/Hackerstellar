@@ -8,7 +8,6 @@ export default function Button(props) {
     <div className="button_parent">
       <div className="button">
         {icon && <img src={icon} alt="icon"></img>}
-        {/* <img src={icon}></img> */}
         {text}
       </div>
     </div>

@@ -20,7 +20,7 @@
 
 html,
 body {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -38,7 +38,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   overflow: hidden;
 }
 

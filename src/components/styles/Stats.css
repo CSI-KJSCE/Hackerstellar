@@ -4,22 +4,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    height: 100%;
+    margin-top: 9vh;
 }
 
 .stat {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 24vw;
-    height: 8vw;
+    width: 21vw;
+    height: 7vw;
 }
 
 .stat_counter {
-    width: 8vw;
-    height: 8vw;
+    width: 7vw;
+    height: 7vw;
     background-color: #e56806;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color: #161616;
     display: flex;
@@ -28,8 +30,8 @@
 }
 
 .stat_content {
-    width: 16vw;
-    height: 8vw;
+    width: 14vw;
+    height: 7vw;
     background-color: #161616;
     display: flex;
     flex-direction: column;

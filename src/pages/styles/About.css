@@ -2,8 +2,58 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 90%;
     z-index: 4;
+}
+
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5rem;
+    width: 60%;
+    gap: 5rem;
+}
+
+.about_heading{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: max-content;
+    width: 100%;
+    gap: 1rem;
+    z-index: 4;
+}
+
+.about_logo {
+    width: 40vw;
+}
+
+.about_content {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.24rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    z-index: 4;
+}
+
+.about_content span {
+    font-weight: 700;
+    color : #e56806;
+}
+
+.about_heading h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2.5px 0px #e56806;
 }
