@@ -35,7 +35,7 @@ function App() {
         <Home />
       </section>
       <section className="section" id="about">
-        <About />
+        <About current={current}/>
       </section>
       <section className="section" id="domains">
         <h1>Domains</h1>

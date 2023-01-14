@@ -5,12 +5,12 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 5rem;
 }
 
 .stat {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     width: 24vw;
     height: 8vw;
 }
@@ -49,5 +49,6 @@
 .stat_content_subtitle {
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
     color: #cfcfcf;
 }
