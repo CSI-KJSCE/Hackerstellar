@@ -24,8 +24,8 @@ const Home = () => {
           className="home_mars"
         />
         <div className="button_position">
-          <Button text="Devfolio"/>
-          <Button text="Discord"/>
+          <Button text="Sponsor_Us"/>
+          <Button text="Contact_Us"/>
         </div>
       </div>
     </>
