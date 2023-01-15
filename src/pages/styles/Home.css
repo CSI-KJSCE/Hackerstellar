@@ -9,13 +9,13 @@
   position: absolute;
   z-index: 5;
   width: 125%;
-  transform: scaleX(1.25) translateY(5vh) translateX(-1vw);
+  transform: scaleX(1.25) translateY(2.5vh) translateX(-1vw);
 }
 
 .home_logo {
   z-index: 9;
   position: absolute;
-  top: 25%;
+  top: 17.5%;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -29,7 +29,7 @@
   display: block;
   transform: translateX(-55%);
   width: auto;
-  height: 85vh;
+  height: 87.5vh;
   object-fit: cover;
 }
 

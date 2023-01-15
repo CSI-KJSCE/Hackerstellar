@@ -18,11 +18,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  scroll-snap-type: y mandatory;
-}
-
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--background-color);
@@ -32,13 +27,11 @@ body {
 }
 
 section {
-  height: 100vh;
   width: 100%;
   color: var(--font-color-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: center;
   overflow: hidden;
 }
 
@@ -56,3 +49,16 @@ section {
 ::-webkit-scrollbar-thumb {
   background: #cfcfcf30;
 }
+
+#home {
+  height: 91vh;
+}
+
+#about {
+  height: 91vh;
+}
+
+#faq {
+  height: auto
+}
+

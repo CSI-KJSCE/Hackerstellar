@@ -17,7 +17,7 @@ function Counter({ target, trigger, className, interval }) {
     return () => clearTimeout(timeout);
   }, [count, target, intervalTime, trigger]);
 
-  return <div className={className}>{`${count}+`}</div>;
+  return <div className={className}><strong>{`${count}+`}</strong></div>;
 }
 
 function Stat({ title, subtitle, target, current, interval }) {
