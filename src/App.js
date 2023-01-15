@@ -6,6 +6,7 @@ import RightNavbar from "./components/RightNavbar";
 import Background from "./components/Background";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Faq from "./pages/Faq";
 
 function App() {
   const [current, setCurrent] = useState("home");
@@ -50,7 +51,7 @@ function App() {
         <h1>Sponsors</h1>
       </section>
       <section className="section" id="faq">
-        <h1>FAQs</h1>
+        <Faq />
       </section>
     </>
   );

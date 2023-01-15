@@ -1,6 +1,10 @@
 [
     {
-        "question": "",
-        "answer": ""
+        "question": "What is a hackathon?",
+        "answer": "A hackathon is usually a day long (can be 36 hours, 48 hours, etc.) coding competition where software programmers, developers, designers, etc. come together to build and design something cool."
+    },
+    {
+        "question": "What do people normally make?",
+        "answer": "Hacks generally fall under one (or more) of the six cortices: Web Development, App Development, AI/ML, Education, Health, and Financial Technology. Depending upon the problem statements, participants use any of the above."
     }
 ]
