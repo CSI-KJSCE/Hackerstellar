@@ -27,6 +27,7 @@ const Faq = () => {
             <div className="faq-question" key={content.question}>
               <Accordion
                 expanded={expanded === index}
+                className="accordion-transition"
                 onChange={handleChange(index)}
                 sx={{
                   width: "100%",
