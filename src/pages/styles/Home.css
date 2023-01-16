@@ -14,9 +14,9 @@
 .home_logo {
   z-index: 9;
   position: absolute;
-  top: 17.5%;
+  top: 27.5%;
   left: 50%;
-  width: 70vw;
+  width: 75vw;
   transform: translate(-50%, -50%);
 }
 

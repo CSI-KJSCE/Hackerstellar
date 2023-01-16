@@ -20,7 +20,7 @@ const Faq = () => {
     <>
       <div className="faq-wrapper">
         <div className="faq-title">
-          <h1>FAQs</h1>
+            <h1>FAQs</h1>
         </div>
         <div className="faq-content">
           {data.map((content, index) => (

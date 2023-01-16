@@ -6,7 +6,7 @@
   --background-color: #000;
   --foreground-color-rgb: 26, 26, 29;
   --foreground-color-secondary: #cfcfcf;
-  --border-accent-color-primary: 255,108,0;
+  --border-accent-color-primary: 255, 108, 0;
   --border-color-rgb: 255, 255, 255;
   --hover-color-primary: #f4f4f4;
   --blur-strength: 15px;
@@ -24,6 +24,10 @@ body {
   height: 100vh;
   transition: color 1s ease;
   overflow-x: hidden;
+}
+
+#root {
+  overflow: hidden;
 }
 
 section {
@@ -55,7 +59,7 @@ section {
 }
 
 #home {
-  height: 91vh;
+  height: 100vh;
 }
 
 #about {
@@ -64,5 +68,5 @@ section {
 
 #faq {
   height: auto;
+  padding-top: 10vh;
 }
-
