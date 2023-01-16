@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     width: 80%;
-    height: 100%;
+    height: max-content;
     z-index: 4;
 }
 
@@ -15,6 +15,11 @@
     text-align: center;
     z-index: 5;
     width: 50%;
+    height: 100%;
+}
+.faq-title h1 {
+    position: sticky;
+    top: 12px;
 }
 
 .accordion-transition {

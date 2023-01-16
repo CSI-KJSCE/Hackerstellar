@@ -3,9 +3,7 @@ import "../components/styles/LeftNavbar.css";
 import data from "../data/components/LeftNavbar.json";
 
 const LeftNavbar = (props) => {
-  const [text, setText] = useState("Hackerstellar"); 
-  console.log(data)
-
+  const [text, setText] = useState("Hackerstellar");
   useEffect(() => {
     setText(data[props.current]);
   }, [props]);
