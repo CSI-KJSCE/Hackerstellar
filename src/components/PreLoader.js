@@ -24,17 +24,17 @@ const Preloader = () => {
         pointerEvents: showPreloader ? "all" : "none",
         opacity: showPreloader ? "1" : "0",
         display: "flex",
-        transform: showPreloader ? "scale(1)" : "scale(4)",
-        transition: "opacity 1s 2s ease, transform 3s ease",
+        transition: "opacity 0.5s 1s ease",
       }}
-    >
+      >
       <img
         src="/preloader.gif"
         style={{
           width: "100%",
           height: "auto",
           opacity: showPreloader ? "1" : "0",
-          transition: "opacity 2s ease",
+          transform: showPreloader ? "scale(1)" : "scale(4)",
+          transition: "transform 3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 2s ease",
         }}
         alt="preloader"
       />

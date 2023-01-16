@@ -5,7 +5,7 @@
   width: 100%;
   border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
   padding: 0px;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
