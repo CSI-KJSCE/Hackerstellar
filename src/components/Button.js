@@ -12,7 +12,7 @@ export default function Button(props) {
           {text}
         </span>
       </div>
-      <div class="btn-trapezoid-outline2 bottom">
+      <div className="btn-trapezoid-outline2 bottom">
         <span>
         {icon && <img src={icon} alt="icon"></img>}
           {text}

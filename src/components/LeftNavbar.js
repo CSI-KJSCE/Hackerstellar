@@ -4,7 +4,6 @@ import data from "../data/components/LeftNavbar.json";
 
 const LeftNavbar = (props) => {
   const [text, setText] = useState("Hackerstellar"); 
-  console.log(data)
 
   useEffect(() => {
     setText(data[props.current]);
