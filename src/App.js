@@ -7,8 +7,10 @@ import Background from "./components/Background";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
+import Preloader from "./components/PreLoader";
 
 function App() {
+  const [showPreloader, setShowPreloader] = useState(true);
   const [current, setCurrent] = useState("home");
 
   const handleScroll = () => {
@@ -28,12 +30,13 @@ function App() {
 
   return (
     <>
+      <Preloader show={showPreloader}/>
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
       <Background />
       <section className="section" id="home">
-        <Home />
+        <Home setShowPreloader={setShowPreloader}/>
       </section>
       <section className="section" id="about">
         <About current={current} />

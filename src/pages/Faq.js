@@ -17,8 +17,8 @@ const Faq = () => {
           <h1>FAQs</h1>
         </div>
         <div className="faq-content">
-          {data.map((content) => (
-            <div className="faq-question" key={content.question}>
+          {data.map((content,ind) => (
+            <div className="faq-question" key={ind}>
               <Accordion sx={{
                 width: "100%",
                 margin: "1rem auto",

@@ -1,4 +1,4 @@
-.button_parent {
+/* .button_parent {
   position: relative;
   width: calc(20vw + 10px);
   height: calc(6vh + 10px);
@@ -61,7 +61,7 @@
     padding-top: 12px;
     width: 42.5vw;
   }
-}
+} */
 
 .btn-wrap{
   margin: 25px 0px;
@@ -85,14 +85,12 @@
   transform-style: preserve-3d;
   padding: 1rem 4rem 2rem;
   border: 1px solid rgba(var(--border-color-rgb), 0.4);
-  /* transform: perspective(200px) rotateX(35deg) translateZ(25px) translateY(5px); */
   transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
   -webkit-backface-visibility: hidden;
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
 .btn-trapezoid-outline:hover{
-  backdrop-filter: blur(6px);
   transition: all .2s ease-in-out;
 }
 .btn-trapezoid-outline:active{
@@ -105,7 +103,6 @@
   font-size: 1.1rem;
   letter-spacing: .08rem;
   display: block;
-  /* transform: perspective(160px) rotateX(-18deg) translateZ(4px) translateY(4px); */
   transform: perspective(160px) rotateX(28deg) translateZ(4px) translateY(4px) scale(.9,1.5);
 }
 .btn-trapezoid-outline2{
