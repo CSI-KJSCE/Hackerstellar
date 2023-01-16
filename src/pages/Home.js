@@ -29,8 +29,8 @@ const Home = () => {
           style={{ display: show ? "block" : "none" }}
         />
         <div className="button_position">
-          <Button text="Sponsor_Us"/>
-          <Button text="Contact_Us"/>
+          <Button text="Devfolio" icon="/copy-solid.svg"/>
+          <Button text="Contact Us"/>
         </div>
       </div>
     </>

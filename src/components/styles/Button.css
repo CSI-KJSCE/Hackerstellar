@@ -84,7 +84,7 @@
   backdrop-filter: blur(10px);
   transform-style: preserve-3d;
   padding: 1rem 4rem 2rem;
-  border: 1px solid rgba(var(--border-color-rgb), 0.4);
+  border: 2px solid rgba(var(--border-color-rgb), 0.4);
   transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
   -webkit-backface-visibility: hidden;
   transition: all .2s ease-in-out;
@@ -102,8 +102,13 @@
 .btn-trapezoid-outline span{
   font-size: 1.1rem;
   letter-spacing: .08rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
   transform: perspective(160px) rotateX(28deg) translateZ(4px) translateY(4px) scale(.9,1.5);
+  padding: 3px 0;
 }
 .btn-trapezoid-outline2{
   display: inline-block;
@@ -119,13 +124,27 @@
 .btn-trapezoid-outline2 span{
   font-size: 1.1rem;
   letter-spacing: .08rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
   opacity: 0;
 }
 
 .btn-trapezoid-outline.top {
   position: absolute;
   z-index: 1;
+}
+.btn_icon{
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  width: auto;
+  height: 18px;
+  /* -webkit-backface-visibility: hidden; */
 }
 .btn-trapezoid-outline2.bottom {
   position: relative;
