@@ -36,6 +36,7 @@ const Preloader = () => {
           opacity: showPreloader ? "1" : "0",
           transition: "opacity 2s ease",
         }}
+        alt="preloader"
       />
     </div>
   );

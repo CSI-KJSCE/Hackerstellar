@@ -2,13 +2,17 @@ import React from "react";
 import "./styles/Home.css";
 import Button from "../components/Button";
 import Spline from "@splinetool/react-spline";
-import Background from "../components/Background";
 
 const Home = () => {
+  let [show, setShow] = React.useState(false);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 5000);
+  }, []);
   return (
     <>
       <div className="home">
-        <Background />
         <img
           src="http://logo-hack.surge.sh/hackerstellar.png"
           alt=""
@@ -22,10 +26,11 @@ const Home = () => {
         <Spline
           scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"
           className="home_mars"
+          style={{ display: show ? "block" : "none" }}
         />
         <div className="button_position">
-          <Button text="Sponsor_Us"/>
-          <Button text="Contact_Us"/>
+          <Button text="Devfolio" icon="/copy-solid.svg"/>
+          <Button text="Contact Us"/>
         </div>
       </div>
     </>
