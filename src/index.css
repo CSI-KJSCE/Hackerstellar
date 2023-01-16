@@ -50,6 +50,10 @@ section {
   background: #cfcfcf30;
 }
 
+#not-built {
+  height: 100vh;
+}
+
 #home {
   height: 91vh;
 }
