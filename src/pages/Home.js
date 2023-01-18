@@ -23,11 +23,11 @@ const Home = () => {
           alt=""
           className="home_astro"
         ></img>
-        <Spline
+        {/* <Spline
           scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"
           className="home_mars"
           style={{ display: show ? "block" : "none" }}
-        />
+        /> */}
         <div className="button_position">
           <Button text="Devfolio" icon="/copy-solid.svg"/>
           <Button text="Contact Us"/>
