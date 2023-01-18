@@ -8,7 +8,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Sponsors from "./pages/Sponsors";
-import Preloader from "./components/PreLoader";
+import Domains from "./pages/Domains";
+import Prizes from "./pages/Prizes";
+import Timeline from "./pages/Timeline";
+import Footer from "./pages/Footer";
+import Preloader from "./pages/PreLoader";
 import NotBuilt from "./pages/NotBuilt";
 
 function App() {
@@ -53,19 +57,22 @@ function App() {
           <About current={current} />
         </section>
         <section className="section" id="domains">
-          <h1>Domains</h1>
+          <Domains />
         </section>
         <section className="section" id="prizes">
-          <h1>Prizes</h1>
+          <Prizes />
         </section>
         <section className="section" id="timeline">
-          <h1>Timeline</h1>
+          <Timeline />
         </section>
         <section className="section" id="sponsors">
           <Sponsors />
         </section>
         <section className="section" id="faq">
           <Faq />
+        </section>
+        <section className="section" id="footer">
+          <Footer />
         </section>
       </>
     );
