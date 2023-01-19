@@ -59,7 +59,7 @@ section {
 
 #home {
   height: 100vh;
-  transform: translateY(15px);
+  transform: translateY(-15px);
 }
 
 #about {
@@ -68,6 +68,11 @@ section {
 
 #timeline {
   height: 91vh;
+}
+
+#sponsors {
+  height: auto;
+  padding: 10vh 0;
 }
 
 #faq {
