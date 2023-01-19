@@ -1,0 +1,78 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  z-index: 4;
+}
+
+.timeline_title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 2.5px 0px #e56806;
+}
+
+.timeline_title p {
+  font-size: 1.4rem;
+  color: #e56806;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin-top: 0.5rem;
+}
+
+.timeline_title span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #50ffc0;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin: 0 0.5rem;
+}
+
+.timeline_incomplete h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 12.5px #e56806;
+}
+
+.timeline_counter {
+  display: flex;
+  flex-direction: col;
+  align-items: center;
+  gap: 2.5vw;
+}
+
+.counter_component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .counter_component div {
+    border: 3px solid rgba(var(--border-color-rgb), 0.5);
+    border-radius: 50%;
+    width: 7vh;
+    height: 7vh;
+    overflow: hidden;
+    display: flex;
+    color: var(--font-color-primary);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .counter_component div h1 {
+    font-size: 1.75rem;
+  }
+  .counter_component h4 {
+    color: var(--font-color-primary);
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+  }

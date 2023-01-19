@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../components/styles/RightNavbar.css";
+import "./styles/RightNavbar.css";
 
 const RightNavbar = () => {
   let countDownDate = new Date("Mar 23, 2023 00:00:00").getTime();

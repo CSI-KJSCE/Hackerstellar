@@ -20,7 +20,7 @@
 .faq-title h1 {
     position: sticky;
     padding: 32px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -29,7 +29,6 @@
 }
 
 .faq-content{
-    /* background-color: #fff; */
     overflow: auto;
 }
 

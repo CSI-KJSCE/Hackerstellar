@@ -36,7 +36,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -60,9 +59,14 @@ section {
 
 #home {
   height: 100vh;
+  transform: translateY(15px);
 }
 
 #about {
+  height: 91vh;
+}
+
+#timeline {
   height: 91vh;
 }
 

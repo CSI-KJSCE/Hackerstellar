@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Sponsors from "./pages/Sponsors";
 import Domains from "./pages/Domains";
-import Prizes from "./pages/Prizes";
 import Timeline from "./pages/Timeline";
 import Footer from "./pages/Footer";
 import Preloader from "./pages/PreLoader";
@@ -58,10 +57,7 @@ function App() {
         </section>
         <section className="section" id="domains">
           <Domains />
-        </section>
-        <section className="section" id="prizes">
-          <Prizes />
-        </section>
+        </section>  
         <section className="section" id="timeline">
           <Timeline />
         </section>

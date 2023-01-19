@@ -49,11 +49,6 @@ const TopNavbar = (props) => {
           <a href="#domains">Domains</a>
         </li>
         <li
-          className={`prizes ${props.current === "prizes" ? "active" : null}`}
-        >
-          <a href="#prizes">Prizes</a>
-        </li>
-        <li
           className={`timeline ${
             props.current === "timeline" ? "active" : null
           }`}
