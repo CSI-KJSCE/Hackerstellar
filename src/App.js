@@ -57,7 +57,7 @@ function App() {
         </section>
         <section className="section" id="domains">
           <Domains />
-        </section>  
+        </section>
         <section className="section" id="timeline">
           <Timeline />
         </section>
@@ -67,9 +67,9 @@ function App() {
         <section className="section" id="faq">
           <Faq />
         </section>
-        <section className="section" id="footer">
+        <footer className="section" id="footer">
           <Footer />
-        </section>
+        </footer>
       </>
     );
   }
