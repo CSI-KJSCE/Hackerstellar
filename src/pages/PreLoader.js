@@ -28,7 +28,9 @@ const Preloader = () => {
       }}
       >
       <img
+        preload="auto"
         src="/preloader.gif"
+        alt="preloader"
         style={{
           width: "100%",
           height: "auto",
@@ -36,7 +38,6 @@ const Preloader = () => {
           transform: showPreloader ? "scale(1)" : "scale(4)",
           transition: "transform 3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 2s ease",
         }}
-        alt="preloader"
       />
     </div>
   );

@@ -32,6 +32,20 @@ function App() {
     });
   };
   useEffect(() => {
+    function handleVisibilityChange() {
+      if (document.visibilityState === 'hidden') {
+        document.title = "Don't lose touch with the stars";
+      } else {
+        document.title = 'Hackerstellar: The ultimate space hacking experience';
+      }
+    }
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
   }, []);
