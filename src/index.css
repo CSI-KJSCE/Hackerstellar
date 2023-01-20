@@ -36,6 +36,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +72,7 @@ section {
 }
 
 #sponsors {
-  height: auto;
+  height: 91vh;
   padding: 10vh 0;
 }
 

@@ -25,16 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-wrapper">
-        {/* <div className="footer-quote">
-          <h3>Do you know ?</h3>
-          <p>
-            "I ain't been up on the block in a minute, uh<br/> I been mixing up the
-            Wock' with the Minute, uh<br/> I been building up the blocks like a
-            meanie (Uh, uh)<br/> Eliantte got water, dripping out the ceiling (Huh,
-            uh)"
-          </p>
-        </div> */}
-        <div className="links">
+        {/* <div className="links">
           <h3>Links</h3>
           <div className="links-wrapper">
             <a href="#">
@@ -50,19 +41,19 @@ const Footer = () => {
               Sponsors
             </a>
             <a href="https://www.facebook.com/csi.kjsce/">
-              facebook
+              Facebook
             </a>
             <a href="https://www.instagram.com/csi_kjsce/">
-              instagram
+              Instagram
             </a>
             <a href="https://www.linkedin.com/company/csi-kjsce/">
-              linkedin
+              Linkedin
             </a>
             <a href="https://www.youtube.com/channel/UCZ1Z2Z1Z2Z1Z2Z1Z2Z1Z2Z1">
-              youtube
+              Youtube
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="footer-bottom">
         <hr/>

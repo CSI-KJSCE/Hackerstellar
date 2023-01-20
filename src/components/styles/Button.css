@@ -72,6 +72,19 @@
   position: absolute;
   z-index: 1;
 }
+
+/* .btn-trapezoid-outline:hover + .btn-trapezoid-outline2 {
+  filter: drop-shadow(0px 10px 20px #ff9100);
+  box-shadow: 0 0 10px 2px orange;
+  transition: all 0.2s ease-in-out;
+} */
+.btn-trapezoid-outline:active + .btn-trapezoid-outline2 {
+  border: 0.2rem solid #ff6f00e1;
+  filter: drop-shadow(0px 10px 10px #ff6f00);
+  box-shadow: 0 0 10px 2px rgb(255, 123, 0);
+  transition: all 0.2s ease-in-out;
+}
+
 .btn_icon {
   top: 50%;
   left: 50%;

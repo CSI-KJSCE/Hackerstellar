@@ -1,9 +1,9 @@
 .sponsor {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  position: relative;
+  justify-content: center;
   width: 90%;
   height: 100%;
   z-index: 4;
@@ -38,10 +38,10 @@
 }
 .sponsor_btn-trapezoid-outline {
   display: inline-block;
-  color: black;
+  color: white;
   font-weight: 700;
   font-size: 1.75rem;
-  background-color: rgb(229, 104, 6, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   transform-style: preserve-3d;
   padding: 1rem 4rem 2rem;
@@ -54,8 +54,9 @@
 .sponsor_btn-trapezoid-outline:hover {
   transition: all 0.2s ease-in-out;
 }
+
 .sponsor_btn-trapezoid-outline:active {
-  padding: 1rem 4.5rem 1.8rem;
+  /* padding: 1rem 4.5rem 1.8rem; */
   top: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -74,13 +75,14 @@
 }
 .sponsor_btn-trapezoid-outline2 {
   display: inline-block;
-  color: #ff6c00;
   background-color: transparent;
   transform-style: preserve-3d;
   padding: 1rem 4.8rem 1.8rem;
-  border: 0.2rem solid rgba(var(--border-color-rgb), 0.6);
+  border: 0.2rem solid #ff9100;
   transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
   -webkit-backface-visibility: hidden;
+  filter: drop-shadow(none);
+  box-shadow: 0 0 10px 3px transparent;
   transition: all 0.3s ease-out;
 }
 .sponsor_btn-trapezoid-outline2 span {
@@ -92,6 +94,17 @@
   width: max-content;
   gap: 10px;
   opacity: 0;
+}
+
+.sponsor_btn-trapezoid-outline:hover + .sponsor_btn-trapezoid-outline2 {
+  filter: drop-shadow(0px 10px 20px #ff9100);
+  box-shadow: 0 0 10px 2px orange;
+  transition: all 0.2s ease-in-out;
+}
+.sponsor_btn-trapezoid-outline:active + .sponsor_btn-trapezoid-outline2 {
+  filter: drop-shadow(0px 10px 20px #ff6f00);
+  box-shadow: 0 0 10px 5px rgb(255, 123, 0);
+  transition: all 0.2s ease-in-out;
 }
 
 .sponsor_btn-trapezoid-outline.top {

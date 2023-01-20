@@ -3,6 +3,7 @@ import "./index.css";
 import TopNavbar from "./components/TopNavbar";
 import LeftNavbar from "./components/LeftNavbar";
 import RightNavbar from "./components/RightNavbar";
+import ImageRule from "./components/ImageRule";
 import Background from "./components/Background";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -51,18 +52,25 @@ function App() {
         <Background />
         <section className="section" id="home">
           <Home setShowPreloader={setShowPreloader} />
+        <ImageRule style={{width: '140%',height: '2%',opacity: '0.9', zIndex: '9', margin: '-30px 0px'}}/>
         </section>
         <section className="section" id="about">
           <About current={current} />
+        <ImageRule />
+
         </section>
-        <section className="section" id="domains">
+        {/* <section className="section" id="domains">
           <Domains />
-        </section>
+        </section> */}
         <section className="section" id="timeline">
           <Timeline />
+        <ImageRule />
+
         </section>
         <section className="section" id="sponsors">
           <Sponsors />
+        <ImageRule  />
+
         </section>
         <section className="section" id="faq">
           <Faq />

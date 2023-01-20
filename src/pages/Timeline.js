@@ -37,12 +37,12 @@ const Timeline = () => {
         <div className='timeline_incomplete'>
           <h1>COMING<br/>SOON</h1>
         </div>
-        <div className="timeline_counter">
+        {/* <div className="timeline_counter">
           <Counter val={days} text='Days' />
           <Counter val={hours} text='Hours' />
           <Counter val={minutes} text='Minutes' />
           <Counter val={seconds} text='Seconds' />
-        </div>
+        </div> */}
       </div>
     </>
   )

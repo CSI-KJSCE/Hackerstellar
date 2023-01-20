@@ -43,11 +43,11 @@ const TopNavbar = (props) => {
         <li className={`about ${props.current === "about" ? "active" : null}`}>
           <a href="#about">About</a>
         </li>
-        <li
+        {/* <li
           className={`domains ${props.current === "domains" ? "active" : null}`}
         >
           <a href="#domains">Domains</a>
-        </li>
+        </li> */}
         <li
           className={`timeline ${
             props.current === "timeline" ? "active" : null
