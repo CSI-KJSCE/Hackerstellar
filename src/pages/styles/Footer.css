@@ -248,4 +248,28 @@
   font-weight: lighter;
   margin-top: 10px;
 }
-/*# sourceMappingURL=Footer.css.map */
+@media (max-width:600px) {
+  .footer{
+    padding: 0;
+    gap: 20px;
+  }
+  .contact-wrapper{
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px;
+  }
+  .contact-wrapper .contact-logo-wrapper h3 {
+    font-size: 1.2rem;
+  }
+  .contact-issues{
+    width: 80% !important;
+  }
+  .contact-issues h3{
+    text-align: center !important;
+  }
+  .footer-bottom{
+    margin-bottom: 100px;
+  }
+}

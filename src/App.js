@@ -33,15 +33,15 @@ function App() {
   };
   useEffect(() => {
     function handleVisibilityChange() {
-      if (document.visibilityState === 'hidden') {
+      if (document.visibilityState === "hidden") {
         document.title = "Don't lose touch with the stars";
       } else {
-        document.title = 'Hackerstellar: The ultimate space hacking experience';
+        document.title = "Hackerstellar: The ultimate space hacking experience";
       }
     }
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
@@ -50,51 +50,48 @@ function App() {
     window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
   }, []);
 
-  if (screenWidth < 1200) {
-    return (
-      <section className="section" id="not-built">
-        <NotBuilt />
+  return (
+    <>
+      <Preloader show={showPreloader} />
+      <TopNavbar current={current} />
+      <LeftNavbar current={current} />
+      <RightNavbar />
+      <Background />
+      <section className="section" id="home">
+        <Home setShowPreloader={setShowPreloader} />
+        <ImageRule
+          style={{
+            width: "140%",
+            height: "2%",
+            opacity: "0.9",
+            zIndex: "9",
+            margin: "-30px 0px",
+          }}
+        />
       </section>
-    );
-  } else {
-    return (
-      <>
-        <Preloader show={showPreloader} />
-        <TopNavbar current={current} />
-        <LeftNavbar current={current} />
-        <RightNavbar />
-        <Background />
-        <section className="section" id="home">
-          <Home setShowPreloader={setShowPreloader} />
-        <ImageRule style={{width: '140%',height: '2%',opacity: '0.9', zIndex: '9', margin: '-30px 0px'}}/>
-        </section>
-        <section className="section" id="about">
-          <About current={current} />
+      <section className="section" id="about">
+        <About current={current} />
         <ImageRule />
-
-        </section>
-        {/* <section className="section" id="domains">
+      </section>
+      {/* <section className="section" id="domains">
           <Domains />
         </section> */}
-        <section className="section" id="timeline">
-          <Timeline />
+      <section className="section" id="timeline">
+        <Timeline />
         <ImageRule />
-
-        </section>
-        <section className="section" id="sponsors">
-          <Sponsors />
-        <ImageRule  />
-
-        </section>
-        <section className="section" id="faq">
-          <Faq />
-        </section>
-        <footer className="section" id="footer">
-          <Footer />
-        </footer>
-      </>
-    );
-  }
+      </section>
+      <section className="section" id="sponsors">
+        <Sponsors />
+        <ImageRule />
+      </section>
+      <section className="section" id="faq">
+        <Faq />
+      </section>
+      <footer className="section" id="footer">
+        <Footer />
+      </footer>
+    </>
+  );
 }
 
 export default App;

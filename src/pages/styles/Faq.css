@@ -35,3 +35,17 @@
 .accordion-transition {
     transition: all 0.3s ease-in-out;
 }
+@media (max-width: 600px) {
+    #faq{
+        height: auto;
+        padding: 0;
+    }
+    .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-title h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
+}
