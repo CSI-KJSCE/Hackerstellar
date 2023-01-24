@@ -264,12 +264,18 @@
     font-size: 1.2rem;
   }
   .contact-issues{
-    width: 80% !important;
+    width: 85% !important;
   }
   .contact-issues h3{
     text-align: center !important;
   }
   .footer-bottom{
     margin-bottom: 100px;
+  }
+  .contact-wrapper .contact-issues .contact-issues-button a img{
+    margin-left: 10px;
+  }
+  .contact-wrapper .contact-issues .contact-issues-button{
+    gap: 10px;
   }
 }
