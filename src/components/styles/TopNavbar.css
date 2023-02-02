@@ -193,13 +193,12 @@ a:hover {
     pointer-events: none;
     width: 100%;
     height: auto;
-    /* top: calc(100% + 1px); */
     border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
     opacity: 0;
     z-index: 90;
   }
 
-  .menu li.active {
+  .menu-mob li.active {
     border-bottom: none;
   }
 
@@ -223,14 +222,15 @@ a:hover {
   .open {
     opacity: 1;
     pointer-events: all;
-    padding-top: 8vh;
+    padding-top: 9vh;
+    padding-bottom: 1vh;
   }
 
   .open li {
-    padding: 2.5vw 0;
+    padding: 2.9vw 0;
   }
 
   .open li a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
