@@ -43,7 +43,7 @@ const Home = () => {
           style={{ display: show ? "block" : "none" }}
         />
         <div className="button_position">
-          <Button text="Devfolio" icon="/devfolio.svg"/>
+          <Button text="Devfolio" icon="/devfolio.svg" onClick={()=>console.log("go to devfolio")}/>
         </div>
       </div>
     </>

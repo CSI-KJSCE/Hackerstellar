@@ -16,16 +16,16 @@ const Footer = () => {
         <div className="contact-issues">
           <h3>ANY ISSUES ? ALWAYS AT YOUR SERVICE</h3>
           <div className="contact-issues-button">
-            <a href="mailto:csikjsce@somaiya.edu">
+            <span >
               <img src={mail} alt="mail" />
               csikjsce@somaiya.edu
-            </a>
-            <button>SEND</button>
+            </span>
+            <a href="mailto:csikjsce@somaiya.edu">CONTACT</a>
           </div>
         </div>
       </div>
-      <div className="footer-wrapper">
-        {/* <div className="links">
+      {/* <div className="footer-wrapper">
+        <div className="links">
           <h3>Links</h3>
           <div className="links-wrapper">
             <a href="#">
@@ -53,8 +53,8 @@ const Footer = () => {
               Youtube
             </a>
           </div>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       <div className="footer-bottom">
         <hr/>
         <h5>© 2023 CSI-KJSCE. All rights reserved</h5>

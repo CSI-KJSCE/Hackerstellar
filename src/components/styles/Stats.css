@@ -13,13 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 21vw;
+    width: 100%;
     height: 7vw;
 }
 
 .stat_counter {
-    width: 7vw;
-    height: 7vw;
+    width: 30%;
+    height: 100%;
     background-color: #e56806;
     font-size: 1.9rem;
     font-weight: 700;
@@ -30,8 +30,8 @@
 }
 
 .stat_content {
-    width: 14vw;
-    height: 7vw;
+    width: 70%;
+    height: 100%;
     background-color: #161616;
     display: flex;
     flex-direction: column;

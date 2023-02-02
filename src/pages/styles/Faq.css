@@ -35,7 +35,7 @@
 .accordion-transition {
     transition: all 0.3s ease-in-out;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #faq{
         height: auto;
         padding: 0;

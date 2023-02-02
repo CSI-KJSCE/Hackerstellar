@@ -1,14 +1,18 @@
-.about_wrapper{
+.about_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 100%;
     z-index: 4;
+    gap: 50px;
 }
 
+.stats {
+    width: 100%;
+}
 
 .about_text {
     display: flex;
@@ -21,7 +25,7 @@
     gap: 5rem;
 }
 
-.about_heading{
+.about_heading {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -47,10 +51,10 @@
 
 .about_content span {
     font-weight: 700;
-    color : #e56806;
+    color: #e56806;
 }
 
-.about_heading h1{
+.about_heading h1 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
@@ -61,45 +65,50 @@
 
 @media (max-width: 1100px) {
     .about_content {
-     
+
         font-size: 1rem;
         line-height: 2rem;
-       
+
     }
-    
-  }
-  
-  @media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
     .about_content {
-     
+
         font-size: 1.01rem;
         line-height: 2.1rem;
-       
+
     }
-  }
-  
-  @media (max-width: 600px) {
-    #about{
+}
+
+@media (max-width: 600px) {
+    #about {
         height: auto;
     }
-    .about_heading{
+
+    .about_heading {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .about_content {
         width: 100%;
         font-size: 1rem;
         line-height: 2rem;
     }
-    .about_text{
+
+    .about_text {
         width: 80%;
         margin-top: 0;
     }
-    .about_logo{
+
+    .about_logo {
         width: 100%;
     }
-    .about_wrapper{
+
+    .about_wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -107,25 +116,30 @@
         height: 100%;
         /* padding-top: 400px; */
     }
-    .about_heading{
+
+    .about_heading {
         align-items: center;
         justify-content: center;
     }
-    .stats{
+
+    .stats {
         width: 80%;
         margin-bottom: 50px;
     }
-    .stat{
+
+    .stat {
         width: 100%;
         height: 100%;
     }
-    .stat_counter{
+
+    .stat_counter {
         /* height: 100%; */
         width: 30%;
         height: 10vh;
     }
-    .stat_content{
+
+    .stat_content {
         height: 10vh;
         width: 70%;
     }
-  }
+}
