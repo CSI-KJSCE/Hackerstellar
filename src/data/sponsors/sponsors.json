@@ -4,7 +4,7 @@
         "contents" : [
             {
                 "name" : "Devfolio",
-                "image" : "../data/sponsors/images/devfolio.png",
+                "image" : "devfolio.png",
                 "link" : "https://devfolio.co/"
             }
         ]
@@ -14,22 +14,22 @@
         "contents" : [
             {
                 "name" : "Polygon",
-                "image" : "../data/sponsors/images/polygon.png",
+                "image" : "polygon.png",
                 "link" : "https://polygon.technology/"
             },
             {
                 "name" : "Solana",
-                "image" : "../data/sponsors/images/solana.png",
+                "image" : "solana.png",
                 "link" : "https://solana.com/"
             },
             {
                 "name" : "Filecoin",
-                "image" : "../data/sponsors/images/filecoin.png",
+                "image" : "filecoin.png",
                 "link" : "https://filecoin.io/"
             },
             {
                 "name" : "Replit",
-                "image" : "../data/sponsors/images/replit.png",
+                "image" : "replit.png",
                 "link" : "https://replit.com/"
             }
         ]
@@ -39,12 +39,12 @@
         "contents" : [
             {
                 "name" : "Earth_Hacks",
-                "image" : "../data/sponsors/images/earthhacks.png",
+                "image" : "earthhacks.png",
                 "link" : "https://earthhacks.io/"
             },
             {
                 "name" : "Wolfram",
-                "image" : "../data/sponsors/images/wolfram.png",
+                "image" : "wolfram.png",
                 "link" : "https://www.wolfram.com/"
             }
         ]
@@ -54,7 +54,7 @@
         "contents" : [
             {
                 "name" : "ButterNut",
-                "image" : "../data/sponsors/images/butternut.png",
+                "image" : "butternut.png",
                 "link" : "https://www.thebutternutcompany.com/"
             }
         ]
@@ -64,7 +64,7 @@
         "contents" : [
             {
                 "name" : "NoticeBard",
-                "image" : "../data/sponsors/images/noticebard.png",
+                "image" : "noticebard.png",
                 "link" : "https://noticebard.com/"
             }
         ]

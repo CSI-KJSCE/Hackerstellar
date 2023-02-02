@@ -1,10 +1,35 @@
 import React from "react";
 import "./styles/Sponsors.css";
+import data from "../data/sponsors/sponsors.json";
+
+const Data = () => {
+  return (
+    <>
+      {data.map((item) => {
+        return (
+          <div key={item.type} className="sponsor_content_group">
+            <h1 className="sponsor_content_title">{item.type}</h1>
+            <div className="sponsor_content_images">
+              {item.contents.map((content) => {
+                return (
+                  <a href={content.link} key={content.name} target="_blank">
+                    <img src={require("/src/data/sponsors/images/" + content.image)} alt={content.name} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
 
 const Sponsors = () => {
-    const handleClick = () => {
-    window.location.href = "mailto:csi-kjsce@somaiya.edu?subject=Regarding%20Hackerstellar%20Hackathon&body=Hello%20CSI-KJSCE";
-    }
+  const handleClick = () => {
+    window.location.href =
+      "mailto:csi-kjsce@somaiya.edu?subject=Regarding%20Hackerstellar%20Hackathon&body=Hello%20CSI-KJSCE";
+  };
   return (
     <>
       <div className="sponsor">
@@ -27,7 +52,7 @@ const Sponsors = () => {
           </div>
         </div>
         <div className="sponsor_content">
-          
+          <Data />
         </div>
       </div>
     </>
