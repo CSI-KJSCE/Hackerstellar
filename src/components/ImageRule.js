@@ -5,7 +5,7 @@ function ImageRule(props) {
     return (
         <img
           src={require("../data/assets/Asset1@3x.png")}
-          alt="rule" className="image-rule"
+          alt="rule" className={`image-rule ${props.className }`}
           style={props.style ? props.style : {}}
         />
     );

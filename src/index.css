@@ -33,7 +33,10 @@ body {
 #root {
   overflow: hidden;
 }
-
+@font-face {
+  font-family: "Inertia";
+  src: url("./data/assets/Inertia_PersonalUse.otf") format("opentype");
+}
 section {
   width: 100%;
   color: var(--font-color-secondary);

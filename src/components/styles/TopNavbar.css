@@ -44,14 +44,16 @@
 .navbar_title {
   text-transform: uppercase;
   font-weight: 700;
+  font-family: Inertia;
   color: var(--font-color-primary);
-  font-style: italic;
+  /* font-style: italic; */
   margin: auto 0;
   text-align: center;
   display: none;
 }
 
-.menu {
+.menu,
+.menu-mob {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +65,12 @@
   transition: all 0.25s;
 }
 
-.menu li {
+.menu-mob {
+  display: none;
+}
+
+.menu li,
+.menu-mob li {
   display: flex;
   align-items: center;
   height: 100%;
@@ -154,6 +161,7 @@ a:hover {
   .navbar {
     height: 8vh;
   }
+
   .navbar_title {
     display: flex;
     justify-content: center;
@@ -164,46 +172,58 @@ a:hover {
   .navbar_logo__container {
     width: 8vh;
   }
+
   .navbar_hamburger__container {
     width: 8vh;
   }
-  .menu-btn:checked ~ .menu {
+
+  .menu-btn:checked~.menu {
     max-height: 240px;
   }
+
   .menu {
+    display: none;
+  }
+
+  .menu-mob {
+    position: fixed;
+    top: 0;
+    display: flex;
     flex-direction: column;
     pointer-events: none;
-    position: absolute;
     width: 100%;
     height: auto;
-    top: calc(100% + 1px);
+    /* top: calc(100% + 1px); */
     border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
     opacity: 0;
+    z-index: 90;
   }
 
   .menu li.active {
     border-bottom: none;
   }
-  .menu-btn:checked ~ .menu-icon .navicon {
+
+  .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon:before {
+  .menu-btn:checked~.menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon:after {
+  .menu-btn:checked~.menu-icon .navicon:after {
     transform: rotate(45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
 
   .open {
     opacity: 1;
     pointer-events: all;
+    padding-top: 8vh;
   }
 
   .open li {

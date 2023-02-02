@@ -1,9 +1,11 @@
 .btn-wrap {
-  margin: 25px 0px;
+  /* margin: 25px 0px; */
+  --fontsize: 1.1rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .btn {
@@ -15,13 +17,13 @@
 .btn-trapezoid-outline {
   display: inline-block;
   color: white;
-  background-color: transparent;
+  background-color: #1717176e;
   backdrop-filter: blur(10px);
   transform-style: preserve-3d;
   padding: 1rem 4rem 2rem;
   border: 0.1rem solid rgba(var(--border-color-rgb), 0.5);
   transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -35,7 +37,7 @@
 }
 
 .btn-trapezoid-outline span {
-  font-size: 1.1rem;
+  font-size: var(--fontsize);
   letter-spacing: 0.08rem;
   display: flex;
   justify-content: center;
@@ -54,11 +56,11 @@
   padding: 1rem 4.8rem 1.8rem;
   border: 0.2rem solid rgba(var(--border-color-rgb), 0.6);
   transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.3s ease-out;
 }
 .btn-trapezoid-outline2 span {
-  font-size: 1.1rem;
+  font-size: var(--fontsize);
   letter-spacing: 0.08rem;
   display: flex;
   justify-content: center;
@@ -96,4 +98,9 @@
   position: relative;
   z-index: 0;
   top: 10px;
+}
+@media (max-width: 600px) {
+  .btn-wrap{
+    --fontsize: 1.4rem;
+  }
 }

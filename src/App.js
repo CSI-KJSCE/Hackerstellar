@@ -9,11 +9,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Sponsors from "./pages/Sponsors";
-import Domains from "./pages/Domains";
+// import Domains from "./pages/Domains";
 import Timeline from "./pages/Timeline";
 import Footer from "./pages/Footer";
 import Preloader from "./pages/PreLoader";
-import NotBuilt from "./pages/NotBuilt";
+// import NotBuilt from "./pages/NotBuilt";
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -60,12 +60,12 @@ function App() {
       <section className="section" id="home">
         <Home setShowPreloader={setShowPreloader} />
         <ImageRule
+          className="image-rule-home"
           style={{
             width: "140%",
             height: "2%",
             opacity: "0.9",
             zIndex: "9",
-            margin: "-30px 0px",
           }}
         />
       </section>

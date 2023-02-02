@@ -4,3 +4,8 @@
     opacity: 0.9;
     z-index: 9;
 }
+@media (max-width: 768px) {
+    .image-rule-home{
+        padding-bottom: 10px;
+    }
+}

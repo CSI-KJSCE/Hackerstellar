@@ -82,6 +82,11 @@
     #about{
         height: auto;
     }
+    .about_heading{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .about_content {
         width: 100%;
         font-size: 1rem;
@@ -90,6 +95,9 @@
     .about_text{
         width: 80%;
         margin-top: 0;
+    }
+    .about_logo{
+        width: 100%;
     }
     .about_wrapper{
         flex-direction: column;

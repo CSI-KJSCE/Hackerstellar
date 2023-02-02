@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import "./styles/NotBuilt.css";
-import { Theme } from "../data/assets/theme";
+import { Theme } from "../theme/theme";
 import Background from "../components/Background";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
