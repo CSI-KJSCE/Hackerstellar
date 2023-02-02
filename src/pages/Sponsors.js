@@ -26,6 +26,9 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
+        <div className="sponsor_content">
+          
+        </div>
       </div>
     </>
   );
