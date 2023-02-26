@@ -1,4 +1,4 @@
-import React, {useRef, useEffect}from "react";
+import React, { useRef, useEffect } from "react";
 import "./styles/Home.css";
 import Button from "../components/Button";
 import Spline from "@splinetool/react-spline";
@@ -14,19 +14,29 @@ const Home = () => {
   const audioRef = useRef(null);
 
   function handleClick() {
-    if(audioRef.current.paused) {
-       audioRef.current.play();
+    if (audioRef.current.paused) {
+      audioRef.current.play();
     } else {
-       audioRef.current.pause();
+      audioRef.current.pause();
     }
   }
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
       <div className="home">
         <img
-        onClick={handleClick}
+          onClick={handleClick}
           src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
           alt=""
           className="home_logo"
@@ -42,8 +52,17 @@ const Home = () => {
           className="home_mars"
           style={{ display: show ? "block" : "none" }}
         />
+        <div
+          class="apply-button"
+          data-hackathon-slug="hackerstellar"
+          data-button-theme="dark"
+        ></div>
         <div className="button_position">
-          <Button text="Devfolio" icon="/devfolio.svg" onClick={()=>console.log("go to devfolio")}/>
+          <Button
+            text="Devfolio"
+            icon="/devfolio.svg"
+            onClick={() => console.log("go to devfolio")}
+          />
         </div>
       </div>
     </>
