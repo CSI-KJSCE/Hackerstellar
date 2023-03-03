@@ -22,14 +22,14 @@ const Home = () => {
   }
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    };
+    }
   }, []);
 
   return (
@@ -52,17 +52,18 @@ const Home = () => {
           className="home_mars"
           style={{ display: show ? "block" : "none" }}
         />
-        <div
-          class="apply-button"
-          data-hackathon-slug="hackerstellar"
-          data-button-theme="dark"
-        ></div>
         <div className="button_position">
-          <Button
+          <div
+            className="apply-button"
+            data-hackathon-slug="hackerstellar"
+            data-button-theme="dark"
+            style = {{height: "50px", width: "400px"}}
+          ></div>
+          {/* <Button
             text="Devfolio"
             icon="/devfolio.svg"
             onClick={() => console.log("go to devfolio")}
-          />
+          /> */}
         </div>
       </div>
     </>
