@@ -51,7 +51,7 @@ function App() {
 
   return (
     <>
-      {/* <Preloader show={showPreloader} /> */}
+      <Preloader show={showPreloader} />
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
@@ -79,9 +79,9 @@ function App() {
       <section className="section" id="faq">
         <Faq />
       </section>
-      <section className="section" id="footer">
+      {/* <section className="section" id="footer">
         <Footer />
-      </section>
+      </section> */}
     </>
   );
 }
