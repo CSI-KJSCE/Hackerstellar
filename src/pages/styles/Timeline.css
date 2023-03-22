@@ -85,4 +85,7 @@
   .timeline_title span {
     display: none;
   }
+  .timeline_incomplete h1 {
+    font-size: 3.25rem;
+  }
 }

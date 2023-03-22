@@ -35,7 +35,7 @@ const Timeline = () => {
           <p> <span>&gt;</span> SCHEDULE OF THE WHOLE EVENT <span>&lt;</span> </p>
         </div>
         <div className='timeline_incomplete'>
-          <h1>COMING SOON</h1>
+          <h1>COMING  SOON</h1>
         </div>
       </div>
     </>

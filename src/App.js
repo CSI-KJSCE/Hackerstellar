@@ -51,7 +51,7 @@ function App() {
 
   return (
     <>
-      <Preloader show={showPreloader} />
+      {/* <Preloader show={showPreloader} /> */}
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />

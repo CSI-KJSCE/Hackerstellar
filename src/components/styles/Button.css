@@ -1,5 +1,4 @@
 .btn-wrap {
-  /* margin: 25px 0px; */
   --fontsize: 1.1rem;
   position: relative;
   display: flex;
@@ -74,12 +73,7 @@
   position: absolute;
   z-index: 1;
 }
-
-/* .btn-trapezoid-outline:hover + .btn-trapezoid-outline2 {
-  filter: drop-shadow(0px 10px 20px #ff9100);
-  box-shadow: 0 0 10px 2px orange;
-  transition: all 0.2s ease-in-out;
-} */
+ 
 .btn-trapezoid-outline:active + .btn-trapezoid-outline2 {
   border: 0.2rem solid #ff6f00e1;
   filter: drop-shadow(0px 10px 10px #ff6f00);
@@ -98,9 +92,4 @@
   position: relative;
   z-index: 0;
   top: 10px;
-}
-@media (max-width: 600px) {
-  .btn-wrap{
-    --fontsize: 1.4rem;
-  }
 }

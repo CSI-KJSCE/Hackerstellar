@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Sponsors.css";
 import data from "../data/sponsors/sponsors.json";
+import Button from "../components/Button";
 
 const Data = () => {
   return (
@@ -13,7 +14,7 @@ const Data = () => {
               {item.contents.map((content) => {
                 return (
                   <a href={content.link} key={content.name} target="_blank">
-                    <img src={require("/src/data/sponsors/images/" + content.image)} alt={content.name} />
+                    <img src={require("/src/data/sponsors/images/" + content.image)} alt={content.name} className="sponsor-img"/>
                   </a>
                 );
               })}
@@ -36,21 +37,10 @@ const Sponsors = () => {
         <div className="sponsor_title">
           <h1>Sponsors</h1>
           <p>
-            {" "}
-            <span>&gt;</span> Want to become a Sponsor? Hit the button below!{" "}
-            <span>&lt;</span>{" "}
+            <span>&gt;</span> Want to become a Sponsor<span>&lt;</span>{" "}
           </p>
         </div>
-        <div onClick={handleClick} className="sponsor_button">
-          <div className="btn-wrap">
-            <div className="btn sponsor_btn-trapezoid-outline top">
-              <span>Sponsor Us</span>
-            </div>
-            <div className="sponsor_btn-trapezoid-outline2 bottom">
-              <span>Sponsor Us</span>
-            </div>
-          </div>
-        </div>
+        <Button text="Sponsor Us" onClick={handleClick} />
         <div className="sponsor_content">
           <Data />
         </div>
