@@ -7,20 +7,19 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-box">
           <div className="footer-box-title">
-            <h1>HACKERSTELLAR</h1>
+            <img
+              src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
+              alt=""
+            />
             <h2>“We bid you Adieu” - Team CSI-KJSCE</h2>
           </div>
           <div className="footer-box-logo">
-            <img src={mail} alt="mail" />
-            <img src={mail} alt="mail" />
+            <img src={require("../data/assets/somaiya-two.png")} alt="mail" />
+            <img src={require("../data/assets/somaiya-one.png")} alt="mail" />
           </div>
         </div>
         <div className="footer-contact">
-          <div className="footer-contact-input">
-            <label>Any issues reach out to us </label>
-            <input type="text" placeholder="Enter your email" />
-            <button>Submit</button>
-          </div>
+          <h1>Any issues reach out to us </h1>
           <div className="footer-contact-socials">
             <li>
               <a href="mailto:csi-kjsce@somaiya.edu">
@@ -46,7 +45,7 @@ const Footer = () => {
         </div>
         <div className="footer-copyright">
           <hr />
-          <p> © 2021 Hackerstellar. All rights reserved.</p>
+          <p> © 2021 CSI-KJSCE. All rights reserved.</p>
         </div>
       </div>
     </>

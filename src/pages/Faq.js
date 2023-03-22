@@ -36,7 +36,7 @@ const Faq = () => {
                 onChange={handleChange(index)}
                 sx={{
                   width: "100%",
-                  margin: "2rem auto",
+                  margin: "1.5rem auto",
                   backdropFilter: "blur(2px) saturate(200%)",
                   backgroundColor: "rgba(var(--foreground-color-rgb), 0.75)",
                   borderRadius: "1rem",

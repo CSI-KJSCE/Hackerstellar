@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   height: calc(100vh - 9vh);
-  width: calc(9vh - 5px);
+  width: 9vh;
   backdrop-filter: blur(15px) saturate(200%);
   -webkit-backdrop-filter: blur(25px) saturate(200%);
   background-color: rgba(var(--foreground-color-rgb), 0.75);

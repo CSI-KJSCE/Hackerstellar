@@ -33,8 +33,7 @@
 }
 
 .navbar_hamburger__container {
-  height: 100%;
-  width: calc(9vh - 5px);
+  width: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;

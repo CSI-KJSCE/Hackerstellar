@@ -79,9 +79,9 @@ function App() {
       <section className="section" id="faq">
         <Faq />
       </section>
-      {/* <section className="section" id="footer">
+      <section className="section" id="footer">
         <Footer />
-      </section> */}
+      </section>
     </>
   );
 }
