@@ -12,7 +12,11 @@ const LeftNavbar = (props) => {
     <>
       <div className="left-navbar">
         <h1 className="left-navbar_title">{text}</h1>
-        <div className="left-navbar_menu">
+        <div className="left-navbar_menu" 
+          style={
+            props.current === "footer" ? {visibility: "hidden"} : {visibility: "visible"}
+          }
+        >
           <li>
             <a href="mailto:csi-kjsce@somaiya.edu">
               <i className="fa-regular fa-envelope icon"></i>

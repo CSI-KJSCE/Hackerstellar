@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -67,11 +67,12 @@ section {
 
 #home {
   height: 100vh;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
 }
 
 #about {
-  height: 100vh;
+  height: auto;
+  margin: 8vh 0vh;
 }
 
 #timeline {
@@ -80,16 +81,9 @@ section {
 
 #sponsors {
   height: auto;
-  padding: 10vh 0;
 }
 
 #faq {
   height: auto;
   padding-top: 10vh;
-}
-
-#footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 import "./styles/imagerule.css";
 
 function ImageRule(props) {
-    return (
-        <img
-          src={require("../data/assets/Asset1@3x.png")}
-          alt="rule" className={`image-rule ${props.className }`}
-          style={props.style ? props.style : {}}
-        />
-    );
+  return (
+    <div class="glow-container">
+      <div class="glow-line"></div>
+    </div>
+  );
 }
 
 export default ImageRule;

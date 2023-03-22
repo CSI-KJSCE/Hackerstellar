@@ -3,63 +3,53 @@ import "./styles/Footer.css";
 import mail from "../data/assets/mail.svg";
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="contact-wrapper">
-        <div className="contact-logo-wrapper">
-          <img
-            src={require("../data/assets/logo.svg").default}
-            alt=""
-            className="contact-logo"
-          />
-          <h3>CSI-KJSCE</h3>
-        </div>
-        <div className="contact-issues">
-          <h3>ANY ISSUES ? ALWAYS AT YOUR SERVICE</h3>
-          <div className="contact-issues-button">
-            <span >
-              <img src={mail} alt="mail" />
-              csikjsce@somaiya.edu
-            </span>
-            <a href="mailto:csikjsce@somaiya.edu">CONTACT</a>
+    <>
+      <div className="footer">
+        <div className="footer-box">
+          <div className="footer-box-title">
+            <h1>HACKERSTELLAR</h1>
+            <h2>“We bid you Adieu” - Team CSI-KJSCE</h2>
+          </div>
+          <div className="footer-box-logo">
+            <img src={mail} alt="mail" />
+            <img src={mail} alt="mail" />
           </div>
         </div>
-      </div>
-      {/* <div className="footer-wrapper">
-        <div className="links">
-          <h3>Links</h3>
-          <div className="links-wrapper">
-            <a href="#">
-              Sponsors
-            </a>
-            <a href="#">
-              Sponsors
-            </a>
-            <a href="#">
-              Sponsors
-            </a>
-            <a href="#">
-              Sponsors
-            </a>
-            <a href="https://www.facebook.com/csi.kjsce/">
-              Facebook
-            </a>
-            <a href="https://www.instagram.com/csi_kjsce/">
-              Instagram
-            </a>
-            <a href="https://www.linkedin.com/company/csi-kjsce/">
-              Linkedin
-            </a>
-            <a href="https://www.youtube.com/channel/UCZ1Z2Z1Z2Z1Z2Z1Z2Z1Z2Z1">
-              Youtube
-            </a>
+        <div className="footer-contact">
+          <div className="footer-contact-input">
+            <label>Any issues reach out to us </label>
+            <input type="text" placeholder="Enter your email" />
+            <button>Submit</button>
+          </div>
+          <div className="footer-contact-socials">
+            <li>
+              <a href="mailto:csi-kjsce@somaiya.edu">
+                <i className="fa-regular fa-envelope icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/csikjsce/?hl=en">
+                <i className="fa-brands fa-instagram icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/csi---kjsce-student%27s-chapter/">
+                <i className="fa-brands fa-linkedin icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@csikjsce3963">
+                <i className="fa-brands fa-youtube icon"></i>
+              </a>
+            </li>
           </div>
         </div>
-      </div> */}
-      <div className="footer-bottom">
-        <hr/>
-        <h5>© 2023 CSI-KJSCE. All rights reserved</h5>
+        <div className="footer-copyright">
+          <hr />
+          <p> © 2021 Hackerstellar. All rights reserved.</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -9,11 +9,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Sponsors from "./pages/Sponsors";
-// import Domains from "./pages/Domains";
+import Domains from "./pages/Domains";
 import Timeline from "./pages/Timeline";
 import Footer from "./pages/Footer";
 import Preloader from "./pages/PreLoader";
-// import NotBuilt from "./pages/NotBuilt";
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -28,7 +27,7 @@ function App() {
       const sectionHeight = section.clientHeight;
       if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
         setCurrent(section.getAttribute("id"));
-      }
+      } 
     });
   };
   useEffect(() => {
@@ -59,37 +58,30 @@ function App() {
       <Background />
       <section className="section" id="home">
         <Home setShowPreloader={setShowPreloader} />
-        <ImageRule
-          className="image-rule-home"
-          style={{
-            width: "140%",
-            height: "2%",
-            opacity: "0.9",
-            zIndex: "9",
-          }}
-        />
       </section>
+        <ImageRule />
       <section className="section" id="about">
         <About current={current} />
-        <ImageRule />
       </section>
+        <ImageRule />
       {/* <section className="section" id="domains">
-          <Domains />
-        </section> */}
+        <Domains />
+      </section>
+        <ImageRule /> */}
       <section className="section" id="timeline">
         <Timeline />
-        <ImageRule />
       </section>
+        <ImageRule />
       <section className="section" id="sponsors">
         <Sponsors />
-        <ImageRule />
       </section>
+        <ImageRule />
       <section className="section" id="faq">
         <Faq />
       </section>
-      <footer className="section" id="footer">
+      <section className="section" id="footer">
         <Footer />
-      </footer>
+      </section>
     </>
   );
 }

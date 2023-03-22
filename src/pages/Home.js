@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import "./styles/Home.css";
-import Button from "../components/Button";
 import Spline from "@splinetool/react-spline";
 
 const Home = () => {
@@ -59,11 +58,6 @@ const Home = () => {
             data-button-theme="dark"
             style = {{height: "50px", width: "400px"}}
           ></div>
-          {/* <Button
-            text="Devfolio"
-            icon="/devfolio.svg"
-            onClick={() => console.log("go to devfolio")}
-          /> */}
         </div>
       </div>
     </>
