@@ -8,8 +8,13 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
 
 const Faq = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -47,8 +52,7 @@ const Faq = () => {
                     sx={{
                       color: expanded === index ? "#e56806" : "#cfcfcf",
                       fontWeight: "bold",
-                      fontSize: "1.15rem",
-                      textTransform: "uppercase",
+                      fontSize: isSmallScreen ? '1rem' : '1.2rem', 
                     }}
                   >
                     {content.question}
