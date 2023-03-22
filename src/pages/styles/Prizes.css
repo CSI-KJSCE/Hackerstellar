@@ -1,0 +1,58 @@
+.prizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    z-index: 4;
+  }
+  
+  .prizes_title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2.5px 0px #e56806;
+  }
+  
+  .prizes_title p {
+    font-size: 1.4rem;
+    color: #e56806;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-top: 0.5rem;
+  }
+  
+  .prizes_title span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #50ffc0;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin: 0 0.5rem;
+  }
+  
+  .prizes_incomplete h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 12.5px #e56806;
+    margin-top: 12.5vh;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .prizes_title p {
+      font-size: 1rem;
+    }
+    .prizes_title span {
+      display: none;
+    }
+    .prizes_incomplete h1 {
+      font-size: 3.25rem;
+    }
+  }

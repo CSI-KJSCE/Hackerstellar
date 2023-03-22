@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Sponsors from "./pages/Sponsors";
 import Domains from "./pages/Domains";
+import Prizes from "./pages/Prizes";
 import Timeline from "./pages/Timeline";
 import Footer from "./pages/Footer";
 import Preloader from "./pages/PreLoader";
@@ -35,7 +36,7 @@ function App() {
       if (document.visibilityState === "hidden") {
         document.title = "Don't lose touch with the stars";
       } else {
-        document.title = "Hackerstellar: The ultimate space hacking experience";
+        document.title = "HACKERSTELLAR";
       }
     }
     document.addEventListener("visibilitychange", handleVisibilityChange);
@@ -64,10 +65,14 @@ function App() {
         <About current={current} />
       </section>
         <ImageRule />
-      {/* <section className="section" id="domains">
+      <section className="section" id="domains">
         <Domains />
       </section>
-        <ImageRule /> */}
+        <ImageRule />
+      <section className="section" id="prizes">
+        <Prizes />
+      </section>
+        <ImageRule />
       <section className="section" id="timeline">
         <Timeline />
       </section>

@@ -75,6 +75,16 @@ section {
   margin: 8vh 0vh;
 }
 
+#domains {
+  height: auto;
+  margin: 12.5vh 0vh;
+}
+
+#prizes {
+  height: auto;
+  margin: 12.5vh 0vh;
+}
+
 #timeline {
   height: auto;
   margin: 12.5vh 0vh;
