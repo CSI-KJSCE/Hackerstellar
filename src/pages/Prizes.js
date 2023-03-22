@@ -7,7 +7,7 @@ const Prizes = () => {
       <div className='prizes'>
         <div className='prizes_title'>
           <h1>Prizes</h1>
-          <p> <span>&gt;</span> PROBLEM STATEMENTS WILL BE BASED ON THESE  <span>&lt;</span> </p>
+          <p> <span>&gt;</span> PRICES WILL BE DECLARED SOON  <span>&lt;</span> </p>
         </div>
         <div className='prizes_incomplete'>
           <h1>COMING  SOON</h1>
