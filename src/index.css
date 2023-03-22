@@ -76,7 +76,8 @@ section {
 }
 
 #timeline {
-  height: 91vh;
+  height: auto;
+  margin: 12.5vh 0vh;
 }
 
 #sponsors {

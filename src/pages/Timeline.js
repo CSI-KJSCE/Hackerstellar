@@ -32,10 +32,10 @@ const Timeline = () => {
       <div className='timeline'>
         <div className='timeline_title'>
           <h1>Timeline</h1>
-          <p> <span>&gt;</span> SCHEDULE OF THE WHOLE EVENT FROM HEAD TO TOE <span>&lt;</span> </p>
+          <p> <span>&gt;</span> SCHEDULE OF THE WHOLE EVENT <span>&lt;</span> </p>
         </div>
         <div className='timeline_incomplete'>
-          <h1>COMING<br/>SOON</h1>
+          <h1>COMING SOON</h1>
         </div>
       </div>
     </>
