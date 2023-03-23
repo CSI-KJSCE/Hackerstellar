@@ -7,22 +7,30 @@ const Preloader = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowPreloader(false);
-    }, 5000);
+    }, 6000);
   }, []);
 
   return (
     <div
       className="preloader-container"
-      style={{ pointerEvents: showPreloader ? "all" : "none", opacity: showPreloader ? "1" : "0" }}
+      style={{
+        pointerEvents: showPreloader ? "all" : "none",
+        opacity: showPreloader ? "1" : "0",
+      }}
     >
-      <img
+      <video
         className="preloader-img"
         preload="auto"
-        src="/preloader.gif"
-        alt="preloader"
-      />
+        autoPlay
+        loop
+        muted
+      >
+        <source src="/preloader.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
 
 export default Preloader;
+

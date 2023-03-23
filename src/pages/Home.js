@@ -10,16 +10,6 @@ const Home = () => {
     }, 5000);
   }, []);
 
-  const audioRef = useRef(null);
-
-  function handleClick() {
-    if (audioRef.current.paused) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-  }
-
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
@@ -35,12 +25,10 @@ const Home = () => {
     <>
       <div className="home">
         <img
-          onClick={handleClick}
           src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
           alt=""
           className="home_logo"
         ></img>
-        <audio ref={audioRef} src="/Hans.mp3" />
         <img
           src="https://ik.imagekit.io/thebeyonder723/astro.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246797"
           alt=""
