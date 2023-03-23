@@ -34,7 +34,7 @@ const TopNavbar = (props) => {
       <nav className="navbar glass">
         <div className="navbar_logo__container">
           <img
-            src={require("../data/assets/logo.svg").default}
+            src="/logo.svg"
             alt=""
             className="navbar_logo"
           />
@@ -81,7 +81,7 @@ const TopNavbar = (props) => {
         <h1 className="navbar_title"> Hackerstellar </h1>
         {easterEgg ? (
           <div className="navbar_hamburger__container">
-            <i className="fa-solid fa-triangle-exclamation nav_danger"></i>
+            <i class="fa-solid fa-user-astronaut nav_danger"></i>
           </div>
         ) : (
           <div className="navbar_hamburger__container">

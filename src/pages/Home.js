@@ -25,12 +25,12 @@ const Home = () => {
     <>
       <div className="home">
         <img
-          src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
+          src="hackerstellar.webp"
           alt=""
           className="home_logo"
         ></img>
         <img
-          src="https://ik.imagekit.io/thebeyonder723/astro.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246797"
+          src="astronaut.webp"
           alt=""
           className="home_astro"
         ></img>
