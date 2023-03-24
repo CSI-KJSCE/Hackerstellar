@@ -75,6 +75,5 @@
     width: 100%;
     gap: 2.5vw;
     flex-direction: column;
-    /* background: linear-gradient(transparent, rgba(37, 37, 37, 0.577)); */
   }
 }

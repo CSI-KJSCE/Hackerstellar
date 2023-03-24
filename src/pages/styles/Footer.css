@@ -79,7 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
+  gap: 1.5rem;
 }
 
 .footer-contact-socials a {
@@ -134,7 +134,6 @@
     color: #e4e4e4;
   }
   .footer-contact-socials li {
-    margin-left: 0.25rem;
     color: #e4e4e4;
   }
   .footer-copyright {
