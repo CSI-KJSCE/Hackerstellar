@@ -7,8 +7,8 @@
 .home_mars {
   position: absolute;
   z-index: 5;
-  width: 125%;
-  transform: scaleX(1.25) translateY(2.5vh) translateX(-1vw);
+  width: 120%;
+  transform: scaleX(1.25) translateY(12.5vh) translateX(-1vw);
 }
 
 .home_logo {

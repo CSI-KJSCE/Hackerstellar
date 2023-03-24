@@ -11,31 +11,23 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
+    };
   }, []);
 
   return (
     <>
       <div className="home">
-        <img
-          src="hackerstellar.webp"
-          alt=""
-          className="home_logo"
-        ></img>
-        <img
-          src="astronaut.webp"
-          alt=""
-          className="home_astro"
-        ></img>
+        <img src="hackerstellar.webp" alt="" className="home_logo"></img>
+        <img src="astronaut.webp" alt="" className="home_astro"></img>
         <Spline
-          scene="https://prod.spline.design/JlGlt2QT4iK50QuS/scene.splinecode"
+          scene="https://prod.spline.design/GlpRUc5Wki1-raL9/scene.splinecode"
           className="home_mars"
           style={{ display: show ? "block" : "none" }}
         />
@@ -44,7 +36,7 @@ const Home = () => {
             className="apply-button"
             data-hackathon-slug="hackerstellar"
             data-button-theme="dark"
-            style = {{height: "50px", width: "400px"}}
+            style={{ height: "50px", width: "400px" }}
           ></div>
         </div>
       </div>
