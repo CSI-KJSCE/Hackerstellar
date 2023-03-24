@@ -90,10 +90,9 @@
 }
 
 .sponsor-img {
-  width: 15rem;
+  width: 13rem;
   object-fit: cover;
   object-position: center;
-  border: 0.1rem solid rgba(var(--border-color-rgb), 0.4);
 }
 
 @media only screen and (max-width: 600px) {

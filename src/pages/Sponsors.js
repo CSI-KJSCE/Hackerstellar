@@ -14,7 +14,7 @@ const Data = () => {
               {item.contents.map((content) => {
                 return (
                   <a href={content.link} key={content.name} target="_blank">
-                    <img src={require("/src/data/sponsors/images/" + content.image)} alt={content.name} className="sponsor-img"/>
+                    <img src={content.image} alt={content.name} className="sponsor-img" />
                   </a>
                 );
               })}
