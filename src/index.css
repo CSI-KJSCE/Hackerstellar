@@ -53,13 +53,19 @@ section {
   background: #cfcfcf30;
 }
 
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 #not-built {
   height: 100vh;
 }
 
 #home {
   height: 100vh;
-  transform: translateY(-20px);
+  transform: translateY(-25px);
 }
 
 #about {
