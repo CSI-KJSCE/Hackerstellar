@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-box">
           <div className="footer-box-title">
             <img
-              src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
+              src="/hackerstellar.webp"
               alt=""
             />
             <h2>“We bid you Adieu” - Team CSI-KJSCE</h2>
