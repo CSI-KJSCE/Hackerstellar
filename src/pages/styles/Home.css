@@ -57,7 +57,7 @@
   }
   .home_mars {
     width: 100%;
-    transform: scaleX(1) scaleY(1.5) translateY(0vh) translateX(0);
+    transform: scaleX(1) scaleY(1.25) translateY(10vh) translateX(0);
   }
 
   .home_astro {
