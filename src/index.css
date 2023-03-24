@@ -30,7 +30,7 @@ body {
   src: url("./data/assets/Inertia_PersonalUse.otf") format("opentype");
 }
 section {
-  width: 100%;
+  width: 100vw;
   color: var(--font-color-secondary);
   display: flex;
   justify-content: center;
@@ -54,9 +54,7 @@ section {
 }
 
 #root {
-  height: 100vh;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 #not-built {
