@@ -11,7 +11,7 @@ const About = (props) => {
         <div className="about_heading">
           <h1>About</h1>
           <img
-            src="https://ik.imagekit.io/thebeyonder723/hackerstellar.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673602246427"
+            src="/hackerstellar.webp"
             alt=""
             className="about_logo"
           ></img>
