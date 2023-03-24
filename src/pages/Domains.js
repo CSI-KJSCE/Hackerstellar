@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/Domains.css";
 import Card from "../components/Card";
+import data from "../data/domains/domains.json";
 
 const Domains = () => {
   return (
@@ -15,24 +16,17 @@ const Domains = () => {
           </p>
         </div>
         <div className="domains_cards">
-          <Card
-            title="DESIGN-DEVELOP"
-            subtitle="WEB/APP"
-            content="Explore the potential of web and mobile applications to solve real-world problems and improve lives."
-            color="#15FC63"
-          />
-          <Card
-            title="CODE-TRAIN-RUN"
-            subtitle="AI/ML"
-            content="Harness the power of artificial intelligence and machine learning to build smart solutions that can learn and adapt."
-            color="#F16500"
-          />
-          <Card
-            title="FLAVOUR-WEB3"
-            subtitle="BLOCKCHAIN"
-            content="Utilize blockchain technology to develop, secure and decentralize systems that can increase transparency and trust."
-            color="#0FC5FF"
-          />
+          {data.map((item) => {
+            return (
+              <Card
+                key={item.title}
+                title={item.title}
+                subtitle={item.subtitle}
+                content={item.content}
+                color={item.color}
+              />
+            );
+          })}
         </div>
       </div>
     </>
