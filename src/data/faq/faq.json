@@ -1,42 +1,38 @@
 [
   {
-    "question": "What is a hackathon?",
-    "answer": "A hackathon is usually a day long (can be 36 hours, 48 hours, etc.) coding competition where software programmers, developers, designers, etc. come together to build and design something cool."
+    "question": "What is Hackerstellar?",
+    "answer": "Hackerstellar is a 24-hour offline coding hackathon where innovation and imagination come to life. The theme of the hackathon is Space Exploration and it is hosted by the Computer Society of India Student’s Chapter at K. J. Somaiya College of Engineering."
   },
   {
-    "question": "What do people normally make?",
-    "answer": "Hacks generally fall under one (or more) of the six cortices: Web Development, App Development, AI/ML, Education, Health, and Financial Technology. Depending upon the problem statements, participants use any of the above."
+    "question": "When and where is Hackerstellar taking place?",
+    "answer": "Hackerstellar is a 24-hour offline coding hackathon taking place on 15th and 16th April at K. J. Somaiya College of Engineering, Vidhyavihar (East), Mumbai."
   },
   {
-    "question": "What are the topics and prizes of hackathon?",
-    "answer": "The topic and the prizes will be declared soon. So keep an eye on the CSI-KJSCE's social media handles. Also once you've registered with an e-mail id, we'll shoot you a mail about further announcements."
+    "question": "What is the format and structure of Hackerstellar?",
+    "answer": "Hackerstellar is a problem statement based hackathon featuring three domains: Web App, AI/ML, and Blockchain. Participants will be given preference for two problem statements per domain to work on developing innovative solutions within the given time frame of 24 Hours."
   },
   {
-    "question": "Who can attend Hackerstellar?",
-    "answer": "Anyone with the enthusiasm for coding can attend this hackathon. The hackathon is for all age groups and for all the coders."
+    "question": "Who is eligible to participate and What is the team structure? ",
+    "answer": "Anyone with enthusiasm for coding can attend Hackerstellar. The hackathon is open to all age groups and all levels of coding experience. Teams for Hackerstellar can consist of 2-4 members, allowing for a diverse range of skills and perspectives to be brought to the table while also ensuring effective collaboration and communication within the team."
   },
   {
-    "question": "How much does it cost to attend Hackerstellar?",
-    "answer": "Nothing At All! Hackerstellar is free for all participants, thanks to our amazing sponsors!"
+    "question":"How do I register for Hackerstellar?",
+    "answer": "You can register for Hackerstellar through Devfolio. The link to the registration page can be found on the homepage of the Hackerstellar website. Simply follow the link and complete the registration process on Devfolio to secure your spot at the hackathon."
   },
   {
-    "question": "When and where is the event going to be held?",
-    "answer": "Hackerstellar is going to be completely offline event! Schedule and details of the event will be updated here shortly."
+    "question": "What is the selection process for Hackerstellar?",
+    "answer": "Hackerstellar consists of two rounds. In the first round, registered teams will be given a problem statement and must submit their solutions using a provided PowerPoint template. Based on their submissions, the top 30 teams will be selected to participate in the second, 24-hour offline round of Hackerstellar at the KJSCE Campus."
   },
   {
-    "question": "What if I've never been to a hackathon before?",
-    "answer": "Not to worry, We welcome students of all skill levels. Hackathons can be a great place to learn new skills in a short amount of time. Just be eager to learn, and excited to meet lots of awesome people."
+    "question":"What facilities and activities are available at Hackerstellar?",
+    "answer": "At Hackerstellar, participants will have access to complimentary food and fun activities to keep them engaged and energized throughout the event. Accommodation facilities will also be available In addition to working on their projects, participants will have the opportunity to network with like-minded individuals and learn from industry experts."
   },
   {
-    "question": "How do teams work?",
-    "answer": "You can work on a project on your own, or you can work with a team. Team size must not exceed four members."
+    "question":"How will I receive updates and important information about Hackerstellar?",
+    "answer": "Once you have registered for Hackerstellar, all important information and updates will be provided to you via email and on our Discord channel. Make sure to check your email regularly and join our Discord channel to stay up-to-date with the latest news and developments."
   },
   {
-    "question": "How many members in a team?",
-    "answer": "A team consists of 2-4 members."
-  },
-  {
-    "question": "404: Question not found",
-    "answer": "You can just drop a DM at any of our social network handles or mail us and we'll try our best to answer them ASAP ;)"
+    "question": "Error 404: Question not found?",
+    "answer": "Feel free to send us a direct message on any of our social media platforms or email us. We’ll do our best to get back to you as soon as possible."
   }
 ]
