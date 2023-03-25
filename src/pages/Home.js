@@ -36,8 +36,16 @@ const Home = () => {
             className="apply-button"
             data-hackathon-slug="hackerstellar"
             data-button-theme="dark"
-            style={{ height: "50px", width: "400px" }}
           ></div>
+          <a href="https://discord.gg/CxpbPSGN6D" target="_blank" rel="noreferrer">
+          <div className="discord-button">
+            <i
+              className="fa-brands fa-discord"
+              style={{ color: "#ffffff" }}
+            ></i>
+            Join our Discord
+          </div>
+          </a>
         </div>
       </div>
     </>

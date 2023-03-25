@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
 .home {
   position: relative;
   width: 100%;
@@ -43,6 +45,27 @@
   gap: 5vw;
 }
 
+.discord-button {
+  background-color: #27333f;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 32px;
+  height: 44px;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  transition: all .1s ease-in 0s;
+  white-space: nowrap;
+  width: 312px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
 @media (max-width: 1100px) {
   .button_position {
     justify-content: space-evenly;
@@ -72,7 +95,11 @@
     justify-content: center;
     bottom: 17.5vh;
     width: 100%;
-    gap: 2.5vw;
+    gap: 5vw;
     flex-direction: column;
+  }
+
+  .discord-button {
+    width: 312px;
   }
 }
