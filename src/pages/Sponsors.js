@@ -1,7 +1,15 @@
-import React from "react";
+import React, { memo, lazy } from "react";
 import "./styles/Sponsors.css";
 import data from "../data/sponsors/sponsors.json";
 import Button from "../components/Button";
+
+const SponsorImage = memo(({ link, image, name }) => {
+  return (
+    <a href={link} target="_blank">
+      <img src={image} alt={name} className="sponsor-img" loading="lazy" />
+    </a>
+  );
+});
 
 const Data = () => {
   return (
@@ -13,9 +21,12 @@ const Data = () => {
             <div className="sponsor_content_images">
               {item.contents.map((content) => {
                 return (
-                  <a href={content.link} key={content.name} target="_blank">
-                    <img src={content.image} alt={content.name} className="sponsor-img" />
-                  </a>
+                  <SponsorImage
+                    key={content.name}
+                    link={content.link}
+                    image={content.image}
+                    name={content.name}
+                  />
                 );
               })}
             </div>

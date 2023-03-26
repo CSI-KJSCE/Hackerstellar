@@ -46,21 +46,21 @@ const Stats = (props) => {
         <Stat
           title="Teams"
           subtitle="Collaborative Commandos"
-          target={50}
+          target={40}
           interval={40}
           current={props.current}
         />
         <Stat
           title="Colleges"
           subtitle="Campus Titans"
-          target={25}
+          target={20}
           interval={80}
           current={props.current}
         />
         <Stat
           title="States"
           subtitle="Regional Rockstars"
-          target={6}
+          target={5}
           interval={333}
           current={props.current}
         />

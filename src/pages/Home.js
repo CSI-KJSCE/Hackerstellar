@@ -1,14 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./styles/Home.css";
-import Spline from "@splinetool/react-spline";
+
+const SplineComponent = React.lazy(() => import("../components/SplineComponent"));
+const VideoComponent = React.lazy(() => import("../components/VideoComponent"));
 
 const Home = () => {
-  let [show, setShow] = React.useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 5000);
-  }, []);
+  let [showSpline, setShowSpline] = React.useState(false);
+  let [showVideo, setShowVideo] = React.useState(false);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -21,16 +19,32 @@ const Home = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 750) {
+        setShowSpline(true);
+        setShowVideo(false);
+      } else {
+        setShowSpline(false);
+        setShowVideo(true);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <div className="home">
-        <img src="hackerstellar.webp" alt="" className="home_logo"></img>
-        <img src="astronaut.webp" alt="" className="home_astro"></img>
-        <Spline
-          scene="https://prod.spline.design/GlpRUc5Wki1-raL9/scene.splinecode"
-          className="home_mars"
-          style={{ display: show ? "block" : "none" }}
-        />
+        <img src="hackerstellar.webp" alt="" className="home_logo" loading="lazy"></img>
+        <img src="astronaut.webp" alt="" className="home_astro" loading="lazy"></img>
+        <React.Suspense fallback={null}>
+          <SplineComponent show={showSpline} />
+          <VideoComponent show={showVideo} />
+        </React.Suspense>
         <div className="button_position">
           <div
             className="apply-button"

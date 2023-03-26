@@ -13,6 +13,13 @@
   transform: scaleX(1.25) translateY(12.5vh) translateX(-1vw);
 }
 
+.home_mars_vid {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  transform: scaleX(1.4) translateY(12.5vh) translateX(-1vw);
+}
+
 .home_logo {
   z-index: 9;
   position: absolute;
@@ -81,7 +88,11 @@
   .home_mars {
     transform: scaleY(1.25) translateY(10vh) translateX(0);
   }
-
+  .home_mars_vid{
+    bottom: 0;
+    transform: scaleX(2) scaleY(2) translateY(-17.5vh) translateX(0);
+    filter: brightness(2.5);
+  }
   .home_astro {
     bottom: 5vh;
     transform: translateX(-50%);

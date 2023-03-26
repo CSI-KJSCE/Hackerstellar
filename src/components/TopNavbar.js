@@ -37,6 +37,7 @@ const TopNavbar = (props) => {
             src="/logo.svg"
             alt=""
             className="navbar_logo"
+            loading="lazy"
           />
         </div>
         <ul className="menu">

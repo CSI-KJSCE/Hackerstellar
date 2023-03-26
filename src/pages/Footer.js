@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className="footer-copyright">
           <hr />
-          <p> © 2021 CSI-KJSCE. All rights reserved.</p>
+          <p> Made with 💖 CSI-KJSCE | © 2023 rights reserved.</p>
         </div>
       </div>
     </>

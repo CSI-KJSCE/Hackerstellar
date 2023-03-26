@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles/RightNavbar.css";
 
 const RightNavbar = () => {
-  let countDownDate = new Date("Apr 15, 2023 00:00:00").getTime();
+  let countDownDate = new Date("Apr 09, 2023 00:00:00").getTime();
   let now = new Date().getTime();
   let timeleft = countDownDate - now;
 
@@ -31,10 +31,12 @@ const RightNavbar = () => {
     <>
       <div className="right-navbar">
         <h1 className="right-navbar_title">
+          <span>C</span>
+          <span>L</span>
+          <span>O</span>
           <span>S</span>
-          <span>O</span>
-          <span>O</span>
-          <span>N</span>
+          <span>E</span>
+          <span>S</span>
         </h1>
         <div className="right-navbar_counter">
           <Counter val={days} text='D' />
