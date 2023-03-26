@@ -51,16 +51,31 @@
                 "name" : ".XYZ",
                 "image" : "/images/xyz.png",
                 "link" : "https://gen.xyz/"
+            },
+            {
+                "name"  : "Interview Cake",
+                "image" : "/images/interview-cake.png",
+                "link"  : "https://www.interviewcake.com/"
             }
         ]
     },
     {
-        "type" : "FOOD SPONSORS",
+        "type" : "FOOD SPONSOR",
         "contents" : [
             {
                 "name" : "ButterNut",
                 "image" : "/images/butternut.png",
                 "link" : "https://www.thebutternutcompany.com/"
+            }
+        ]
+    },
+    {
+        "type" : "STICKER SPONSOR",
+        "contents" : [
+            {
+                "name" : "Stickersshub",
+                "image" : "/images/Stickersshub.png",
+                "link" : ""
             }
         ]
     }

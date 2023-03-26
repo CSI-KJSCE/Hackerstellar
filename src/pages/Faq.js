@@ -46,7 +46,7 @@ const FaqQuestion = memo(({ content, index, expanded, handleChange, isSmallScree
           <Typography
             sx={{
               color: "#cfcfcf",
-              fontSize: "1.1rem",
+              fontSize: isSmallScreen ? '1rem' : '1.1rem',
             }}
           >
             {content.answer}
