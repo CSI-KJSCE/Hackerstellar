@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./styles/Domains.css";
 import Card from "../components/Card";
 import data from "../data/domains/domains.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Domains = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="domains">

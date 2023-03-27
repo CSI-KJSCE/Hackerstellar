@@ -16,11 +16,6 @@
     height: 7vw;
 }
 
-.stat:hover {
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
-}
-
 .stat_counter {
     width: 30%;
     height: 100%;

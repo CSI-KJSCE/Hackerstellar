@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, useEffect, memo } from "react";
 import "./styles/Faq.css";
 import data from "../data/faq/faq.json";
 import {
@@ -10,10 +10,12 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTheme } from '@mui/material/styles';
 import { useMediaQuery } from '@mui/material';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FaqQuestion = memo(({ content, index, expanded, handleChange, isSmallScreen }) => {
   return (
-    <div className="faq-question" key={content.question}>
+    <div className="faq-question" key={content.question} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <Accordion
         expanded={expanded === index}
         className="accordion-transition"
@@ -58,6 +60,10 @@ const FaqQuestion = memo(({ content, index, expanded, handleChange, isSmallScree
 });
 
 const Faq = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 

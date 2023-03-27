@@ -1,10 +1,12 @@
 import React from 'react';
 import './styles/Card.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Card = (props) => {
   return (
     <>
-        <div className='card'>
+        <div className='card' data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div className='card_title' style={{
                 backgroundColor: props.color,
             }}>

@@ -25,9 +25,9 @@
     text-shadow: 0px 2.5px 0px #e56806;
 }
 
-.faq-content{
+/* .faq-content{
     overflow: auto;
-}
+} */
 
 .accordion-transition {
     transition: all 0.3s ease-in-out;

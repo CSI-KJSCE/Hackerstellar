@@ -1,56 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import './styles/Timeline.css';
+import React, {useEffect} from "react";
+import "./styles/Timeline.css";
+import TimeStamp from "../components/TimeStamp";
+import data from "../data/timeline/timeline.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Timeline = () => {
-  let countDownDate = new Date("Mar 23, 2023 00:00:00").getTime();
-  let now = new Date().getTime();
-  let timeleft = countDownDate - now;
-
-  let [days, setDays] = useState(0);
-  let [hours, setHours] = useState(0);
-  let [minutes, setMinutes] = useState(0);
-  let [seconds, setSeconds] = useState(0);
-
-  function setTime() {
-    setDays(Math.floor(timeleft / (1000 * 60 * 60 * 24)));
-    setHours(Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-    setMinutes(Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60)));
-    setSeconds(Math.floor((timeleft % (1000 * 60)) / 1000));
-    setTimeout(() => {
-      now = new Date().getTime();
-      timeleft = countDownDate - now;
-      setTime();
-    }, 1000);
-  }
-
   useEffect(() => {
-    setTime();
-  });
-
+    AOS.init();
+  }, []);
   return (
     <>
-      <div className='timeline'>
-        <div className='timeline_title'>
+      <div className="timeline">
+        <div className="timeline_title">
           <h1>Timeline</h1>
-          <p> <span>&gt;</span> SCHEDULE OF THE WHOLE EVENT <span>&lt;</span> </p>
+          <p>
+            <span>&gt;</span> SCHEDULE OF THE WHOLE EVENT <span>&lt;</span>
+          </p>
         </div>
-        <div className='timeline_incomplete'>
-          <h1>COMING  SOON</h1>
+        <div className="timeline_line">
+          <div className="timeline_line_progress" />
+        </div>
+        <div className="timeline_content">
+          {data.map((item) => {
+            return (
+              <TimeStamp
+                key={item.title}
+                title={item.title}
+                subtitle={item.subtitle}
+                date={item.date}
+                month={item.month}
+                align={item.align}
+              />
+            );
+          })}
         </div>
       </div>
     </>
-  )
-}
-
-function Counter(props) {
-  return (
-    <div className="counter_component">
-      <div>
-        <h1>{props.val}</h1>
-      </div>
-      <h4>{props.text}</h4>
-    </div>
   );
-}
+};
 
-export default Timeline
+export default Timeline;
