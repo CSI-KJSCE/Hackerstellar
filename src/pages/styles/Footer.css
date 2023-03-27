@@ -40,6 +40,16 @@
   margin-top: 0.5rem;
 }
 
+.footer-box-logo img {
+  width: 10rem;
+  height: auto;
+}
+
+.bakwaas {
+  width: 4rem !important;
+  height: auto !important;
+}
+
 .footer-copyright {
   text-align: center;
   font-size: 1rem;

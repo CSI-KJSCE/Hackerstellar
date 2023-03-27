@@ -1,4 +1,14 @@
-[
+[   
+    {
+        "type": "TITLE SPONSOR",
+        "contents" : [
+            {
+                "name" : "R-City",
+                "image" : "/images/r-city.png",
+                "link" : "http://rcity.co.in/"
+            }
+        ]
+    },
     {
         "type": "PLATFORM SPONSOR",
         "contents" : [
@@ -75,7 +85,7 @@
             {
                 "name" : "Stickersshub",
                 "image" : "/images/Stickersshub.png",
-                "link" : ""
+                "link" : "https://www.instagram.com/stickersshub"
             }
         ]
     }

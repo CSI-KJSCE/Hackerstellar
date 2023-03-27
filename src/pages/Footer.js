@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Footer.css";
 const Footer = () => {
+  const isMobile = window.innerWidth < 600;
   return (
     <>
       <div className="footer">
@@ -13,8 +14,11 @@ const Footer = () => {
             <h2>“We bid you Adieu” - Team CSI-KJSCE</h2>
           </div>
           <div className="footer-box-logo">
+            <img src="/technext.png" alt="mail" style={{
+              display: isMobile ? "none" : "block"
+            }}/>
             <img src="/somaiya-two.png" alt="mail" />
-            <img src="/somaiya-one.png" alt="mail" />
+            <img src="/somaiya-one.png" alt="mail" className="bakwaas"/>
           </div>
         </div>
         <div className="footer-contact">
