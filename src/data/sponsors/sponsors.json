@@ -3,6 +3,11 @@
         "type": "TITLE SPONSOR",
         "contents" : [
             {
+                "name" : "Stone-X",
+                "image" : "/images/stone-x.png",
+                "link" : "http://www.stonex.com/"
+            },
+            {
                 "name" : "R-City",
                 "image" : "/images/r-city.png",
                 "link" : "http://rcity.co.in/"
