@@ -96,6 +96,13 @@
   animation: animation 2s infinite;
 }
 
+.sponsor-title-img {
+  width: 19rem;
+  object-fit: cover;
+  object-position: center;
+  animation: animation 2s infinite;
+}
+
 @keyframes animation {
   from {
     transform:translateY(0);
@@ -131,6 +138,10 @@
   }
   .sponsor-img {
     width: 8rem;
+    margin: 0rem;
+  }
+  .sponsor-title-img {
+    width: 15rem;
     margin: 0rem;
   }
 }

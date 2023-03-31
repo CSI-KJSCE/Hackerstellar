@@ -1,12 +1,18 @@
-import React, { memo, lazy } from "react";
+import React, { useState, memo, lazy, useEffect } from "react";
 import "./styles/Sponsors.css";
 import data from "../data/sponsors/sponsors.json";
 import Button from "../components/Button";
 
-const SponsorImage = memo(({ link, image, name }) => {
+const SponsorImage = memo(({ type, link, image, name }) => {
+  console.log(type)
   return (
     <a href={link} target="_blank">
-      <img src={image} alt={name} className="sponsor-img" loading="lazy" />
+          <img
+          src={image}
+          alt={name}
+          className={type==="TITLE SPONSOR" ? "sponsor-title-img" : "sponsor-img"}
+          loading="lazy"
+        />
     </a>
   );
 });
@@ -23,6 +29,7 @@ const Data = () => {
                 return (
                   <SponsorImage
                     key={content.name}
+                    type={item.type}
                     link={content.link}
                     image={content.image}
                     name={content.name}
