@@ -71,6 +71,11 @@
                 "name"  : "Interview Cake",
                 "image" : "/images/interview-cake.png",
                 "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Qoom",
+                "image" : "/images/qoom.png",
+                "link"  : "https://www.interviewcake.com/"
             }
         ]
     },
