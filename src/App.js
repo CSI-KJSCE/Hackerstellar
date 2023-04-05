@@ -52,7 +52,7 @@ function App() {
 
   return (
     <>
-      <Preloader show={showPreloader} />
+      {/* <Preloader show={showPreloader} /> */}
       <TopNavbar current={current} />
       <LeftNavbar current={current} />
       <RightNavbar />
@@ -68,7 +68,7 @@ function App() {
       <section className="section" id="domains">
         <Domains />
       </section>
-        <ImageRule />
+        <ImageRule />  
       <section className="section" id="prizes">
         <Prizes />
       </section>

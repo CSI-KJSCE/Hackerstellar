@@ -1,17 +1,30 @@
-[
+{
+  "overall": [
     {
-        "domain" : "AI/ML",
-        "prize" : "10",
-        "desc" : "CASH PRIZE AND GOODIES WORTH 1L+, INTERNSHIPS AND MANY MORE !!! "
-    },
-    {
-        "domain" : "WEB/APP",
-        "prize" : "10",
-        "desc" : "CASH PRIZE AND GOODIES WORTH 1L+, INTERNSHIPS AND MANY MORE !!! "
-    },
-    {
-        "domain" : "BLOCKCHAIN",
-        "prize" : "10",
-        "desc" : "CASH PRIZE AND GOODIES WORTH 1L+, INTERNSHIPS AND MANY MORE !!! "
+      "domain": "GALACTIC GENIUS",
+      "prize": "15",
+      "desc": "Checks, Prizes, Internships, Goodies & More!",
+      "color": "#FF8A04"
     }
-]
+  ],
+  "domain": [
+    {
+      "domain": "AI/ML",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#FF5733"
+    },
+    {
+      "domain": "WEB/APP",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#FF1744"
+    },
+    {
+      "domain": "BLOCKCHAIN",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#9C27B0"
+    }
+  ]
+}
