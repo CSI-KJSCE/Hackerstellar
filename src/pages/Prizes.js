@@ -4,7 +4,7 @@ import data from "../data/prizes/prizes.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const FirstPrize = ({ domain, prize, desc, color }) => {
+const FirstPrize = ({ domain, prize, desc, color, textColor }) => {
   return (
     <div
       className="prizes_galactic_genius"
@@ -23,12 +23,14 @@ const FirstPrize = ({ domain, prize, desc, color }) => {
         </div>
         <div className="prizes_gg_content">{desc}</div>
       </div>
-      <div className="prizes_gg_subtitle">INR {prize}K+</div>
+      <div className="prizes_gg_subtitle" style={{
+        color: `${textColor}`
+      }}>INR {prize}K+</div>
     </div>
   );
 };
 
-const DomainPrize = ({ domain, prize, desc, color }) => {
+const DomainPrize = ({ domain, prize, desc, color, textColor }) => {
   return (
     <div
       className="domain_child"
@@ -47,7 +49,7 @@ const DomainPrize = ({ domain, prize, desc, color }) => {
       <div
         className="prizes_subtitle"
         style={{
-          color: `${color}`,
+          color: `${textColor}`,
         }}
       >
         INR {prize}K+
@@ -83,6 +85,7 @@ const Prizes = () => {
               prize={item.prize}
               desc={item.desc}
               color={item.color}
+              textColor={item.textColor}
             />
           );
         })}
@@ -94,6 +97,7 @@ const Prizes = () => {
               prize={item.prize}
               desc={item.desc}
               color={item.color}
+              textColor={item.textColor}
             />
           ))}
         </div>
