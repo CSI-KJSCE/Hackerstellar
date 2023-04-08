@@ -76,6 +76,11 @@
                 "name"  : "Qoom",
                 "image" : "/images/qoom.png",
                 "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Verbwire",
+                "image" : "/images/verbwire.png",
+                "link"  : "https://www.verbwire.com/"
             }
         ]
     },
