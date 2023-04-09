@@ -31,12 +31,10 @@ const RightNavbar = () => {
     <>
       <div className="right-navbar">
         <h1 className="right-navbar_title">
-          <span>C</span>
-          <span>L</span>
+          <span>S</span>
           <span>O</span>
-          <span>S</span>
-          <span>E</span>
-          <span>S</span>
+          <span>O</span>
+          <span>N</span>
         </h1>
         <div className="right-navbar_counter">
           <Counter val={days} text='D' />
