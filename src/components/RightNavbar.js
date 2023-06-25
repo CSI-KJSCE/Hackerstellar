@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles/RightNavbar.css";
 
 const RightNavbar = () => {
-  let countDownDate = new Date("Apr 15, 2023 09:00:00").getTime();
+  let countDownDate = new Date("Jul 15, 2023 09:00:00").getTime();
   let now = new Date().getTime();
   let timeleft = countDownDate - now;
 
